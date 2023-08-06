@@ -100,12 +100,12 @@ a:hover {
 }
 @media screen and (min-width: 601px) {
     .category {
-        transform: translate(0px, 0px);
+        transform: translate(-535px, 0px);
         top: calc(50vh - 35px);
         height: 70px;
     }
     .size35 {
-        text-align: left;
+        text-align: right;
         font-size: 70px;
     }
     body {
