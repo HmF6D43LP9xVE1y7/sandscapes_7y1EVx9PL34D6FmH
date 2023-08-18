@@ -23,9 +23,6 @@
     font-family: "font";
     text-transform: none;
     text-decoration: none;
-    text-align: left;
-    color: black;
-    line-height: 1.2;
 }
 body {
     background-color: white;
@@ -33,12 +30,10 @@ body {
 .size35 {
     pointer-events: all;
     display: block;
-    font-size: 35px;
 }
 .size175 {
     height: fit-content;
-    font-size: 17.5px;
-    margin: 35px auto auto auto;
+    margin: 2.5rem auto auto auto;
 }
 a,
 a:hover {
@@ -62,9 +57,7 @@ a:hover {
 
 .article {
     background-color: yellow;
-    width: 80vw;
-    max-width: 500px;
-    margin: auto;
+    max-width: 30rem;
 }
 .category, .content {
     position: -webkit-sticky; /* needed??? */
@@ -72,67 +65,54 @@ a:hover {
 }
 .category {
     background-color: red;
-    margin: auto auto 0px auto;
-
     }
-.spacingS {
-    background-color: green;
-    height: 0px;
-    margin: auto;
-    width: 80vw;
-    max-width: 500px;
-}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) /* mobile */ {
     .category {
-        transform: translate(0px, 0px);
-        top: 70px;
-        z-index: 200;
-
+        top: 5rem;
+    }
+    .article {
+        margin: auto 2.5rem auto 2.5rem;
     }
     .size35 {
         text-align: left;
-        font-size: 35px;
-        height: 35px;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .size175 {
+        text-align: left;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
     }
     body {
-        margin: 280px auto 35px auto;
+        margin: calc(50vh - 1.25rem) auto 2.5rem auto;
     }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 601px) /* desktop */ {
     .category {
-        transform: translate(-535px, 0px);
-        top: calc(50vh - 35px);
-        height: 70px;
+        top: calc(50vh - 1.25rem);
+        transform: translate(calc(-30rem - 2.5rem), 0);
+    }
+    .article {
+        margin: auto 10rem auto 50vw;
     }
     .size35 {
         text-align: right;
-        font-size: 35px;
-        height: 35px;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .size175 {
+        text-align: left;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
     }
     body {
-        margin: calc(50vh - 35px) auto calc(50vh - 35px) auto;
+        margin: calc(50vh - 1.25rem) auto calc(50vh - 1.25rem) auto;
     }
 }
-.myDiv {
-    position: fixed;
-    top: 0px;
-    width: 100vw;
-    height: 140px;
-    background-color: white !important;
-    z-index: 100;
-}
-.gradientTop {
-    position: fixed;
-    top: 140px;
-    width: 100vw;
-    height: 140px;
-    background-image: linear-gradient(rgba(255,255,255,1), rgba(255,0,0,0));
-    z-index: 100;
-}
-* {
+*{ 
     background-color: transparent !important;
-/*
+*/
     border: 1px solid black;
-    */
+
 }
