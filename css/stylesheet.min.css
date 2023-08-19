@@ -25,13 +25,16 @@
     text-decoration: none;
 }
 body {
-    background-color: white;
+    background-color: rgba(10, 10, 10, 1);
 }
 .size35 {
+    color: rgba(235, 235, 235, 1);
     pointer-events: all;
     display: block;
 }
 .size175 {
+    color: white;
+
     height: fit-content;
     margin: 2.5rem auto auto auto;
 }
@@ -56,17 +59,16 @@ a:hover {
 
 
 .article {
-    background-color: yellow;
     max-width: 30rem;
 }
 .category, .content {
     position: -webkit-sticky; /* needed??? */
     position: sticky;
 }
-.category {
-    background-color: red;
-    }
-
+.indent {
+    text-indent: 2.5rem;
+    margin: 0;
+}
 @media screen and (max-width: 600px) /* mobile */ {
     .category {
         top: 5rem;
@@ -92,9 +94,11 @@ a:hover {
     .category {
         top: calc(50vh - 1.25rem);
         transform: translate(calc(-30rem - 2.5rem), 0);
+
     }
     .article {
         margin: auto 10rem auto 50vw;
+
     }
     .size35 {
         text-align: right;
@@ -106,13 +110,48 @@ a:hover {
         font-size: 1.25rem;
         line-height: 1.25rem;
     }
+
     body {
         margin: calc(50vh - 1.25rem) auto calc(50vh - 1.25rem) auto;
     }
 }
-*{ 
-    background-color: transparent !important;
-*/
-    border: 1px solid black;
 
+
+
+.article :not(.customDiv) {
+    animation: anim;
+    animation-duration: 2s;
+
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-delay: 1s;
 }
+.customDiv {
+    animation: anim;
+    animation-duration: 2s;
+
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+}
+@keyframes anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+*{ /*
+    background-color: transparent !important;
+ /*
+    border: 1px solid black;
+*/
+}
+
+
+  
