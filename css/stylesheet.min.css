@@ -159,6 +159,11 @@ body {
     display: block;
     margin: 6rem auto auto auto;
 }
+img {
+    max-width: 48rem;
+    display: block;
+    margin: auto;
+}
 @media screen and (max-width: 600px) /* mobile */ {
     .description {
         width: 8rem;
@@ -177,7 +182,7 @@ body {
 }
 @media screen and (min-width: 601px) /* desktop */ {
     .description {
-        width: 12rem;
+        width: 24rem;
         font-size: 8rem;
         line-height: 2.4rem; /* font to baseline */
         color: rgba(0, 0, 0, 1);
@@ -239,7 +244,7 @@ body {
 */
 
 
-.article :not(.introduction) {
+img, .article :not(.introduction) {
     animation: anim;
     animation-duration: 2s;
 
