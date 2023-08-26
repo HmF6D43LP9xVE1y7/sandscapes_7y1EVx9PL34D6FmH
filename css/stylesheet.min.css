@@ -118,7 +118,7 @@ body {
     margin: calc(50vh - 2rem) auto calc(50vh - 2rem) auto;
 }
 .article {
-    width: 35rem;
+    width: 48rem;
     display: table;
     margin: 4rem auto 4rem auto;
 }
@@ -145,7 +145,7 @@ body {
     font-style: normal;
 }
 .quote {
-    margin: 2rem auto 2rem -8.25rem;
+    margin: 2rem auto 2rem -6rem;
     z-index: 1;
     font-size: 2rem;
     line-height: 2rem;
@@ -161,7 +161,7 @@ body {
 }
 @media screen and (max-width: 600px) /* mobile */ {
     .description {
-        width: 8.75rem;
+        width: 8rem;
         font-size: 4rem;
         line-height: 2.4rem; /* font to baseline */
         color: rgba(0, 0, 0, 1);
@@ -169,7 +169,7 @@ body {
         -webkit-text-stroke-color: rgba(235, 235, 235, 1);
     }
     .content {
-        width: 26.25rem;
+        width: 26rem;
         transform: translate(0rem, .15rem); /* font to baseline */
         font-size: 1rem;
         line-height: 1rem;
@@ -177,7 +177,7 @@ body {
 }
 @media screen and (min-width: 601px) /* desktop */ {
     .description {
-        width: 17.5rem;
+        width: 12rem;
         font-size: 8rem;
         line-height: 2.4rem; /* font to baseline */
         color: rgba(0, 0, 0, 1);
@@ -185,7 +185,7 @@ body {
         -webkit-text-stroke-color: rgba(235, 235, 235, 1);
     }
     .content {
-        width: 17.5rem;
+        width: 24rem;
         transform: translate(0rem, .15rem); /* font to baseline */
         font-size: 1rem;
         line-height: 1rem;
