@@ -111,7 +111,7 @@
     text-align: left;
     text-transform: none;
     text-decoration: none;
-    vertical-align: baseline;
+    vertical-align: bottom;
 }
 body {
     margin: calc(50vh - 2rem) auto calc(50vh - 2rem) auto;
@@ -140,7 +140,6 @@ body {
     background-color: transparent;
     display: table-cell;
     z-index: 1;
-    height: fit-content;
 
     color: rgba(235, 235, 235, 1);
     font-family: "din-2014", sans-serif;
@@ -149,8 +148,7 @@ body {
 }
 .quote {
     background-color: red;
-    height: fit-content;
-    margin: 2.5rem auto 2.5rem auto;
+    margin: 2rem auto 2rem -8.25rem;
     font-size: 2rem;
     line-height: 2rem;
 
@@ -158,6 +156,10 @@ body {
     font-family: "din-2014", sans-serif;
     font-weight: 700;
     font-style: italic;
+}
+.spacing {
+    display: block;
+    margin: 6rem auto auto auto;
 }
 @media screen and (max-width: 600px) /* mobile */ {
     .description {
@@ -170,7 +172,7 @@ body {
     }
     .content {
         width: 26.25rem;
-        transform: translate(0rem, .225rem); /* font to baseline */
+        transform: translate(0rem, .15rem); /* font to baseline */
         font-size: 1rem;
         line-height: 1rem;
     }
@@ -186,13 +188,9 @@ body {
     }
     .content {
         width: 17.5rem;
-        transform: translate(0rem, .225rem); /* font to baseline */
+        transform: translate(0rem, .15rem); /* font to baseline */
         font-size: 1rem;
         line-height: 1rem;
-    }
-    br {
-        display: block;
-        margin: 4rem auto auto auto;
     }
 }
 @media not all and (min-resolution:.001dpcm)
