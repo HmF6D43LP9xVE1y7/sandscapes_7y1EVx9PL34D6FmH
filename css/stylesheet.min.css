@@ -95,7 +95,7 @@
     display: none;
 }
 * {
-    background-color: rgba(0, 0, 0, 1); /* safari scroll overflow color is still black */
+    background-color: transparent;
     padding: 0;
     margin: 0;
     border: 0;
@@ -114,16 +114,15 @@
     vertical-align: bottom;
 }
 body {
+    background-color: rgba(0, 0, 0, 1); /* safari scroll overflow color is still black */
     margin: calc(50vh - 2rem) auto calc(50vh - 2rem) auto;
 }
 .article {
-    background-color: green;
     width: 35rem;
     display: table;
     margin: 4rem auto 4rem auto;
 }
 .description {
-    background-color: red;
     position: sticky !important;
     top: calc(50vh - 2rem);
     height: 4rem;
@@ -137,7 +136,6 @@ body {
     font-style: normal;
 }
 .content {
-    background-color: transparent;
     display: table-cell;
     z-index: 1;
 
@@ -147,8 +145,8 @@ body {
     font-style: normal;
 }
 .quote {
-    background-color: red;
     margin: 2rem auto 2rem -8.25rem;
+    z-index: 1;
     font-size: 2rem;
     line-height: 2rem;
 
@@ -207,10 +205,19 @@ body {
 
 
 
-
-
-
-
+/* DEBUG *//*
+.article {
+    background-color: green;
+}
+.description {
+    background-color: red;
+}
+.content {
+    background-color: transparent;
+}
+.quote {
+    background-color: red;
+}
 .X, .Y {
     display: block;
     position: fixed;
@@ -229,7 +236,7 @@ body {
     top: 0px;
     left: calc(50vw - .5px);
 }
-/*
+*/
 
 
 .article :not(.introduction) {
