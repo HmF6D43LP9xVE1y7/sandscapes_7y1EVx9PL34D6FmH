@@ -145,7 +145,7 @@ body {
     font-style: normal;
 }
 .quote {
-    margin: 2rem auto 2rem -6rem;
+    margin: 2rem -6rem 2rem -6rem;
     z-index: 1;
     font-size: 2rem;
     line-height: 2rem;
