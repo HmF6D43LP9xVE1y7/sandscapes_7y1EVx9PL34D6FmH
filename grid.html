@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+                @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/9cc8ec/00000000000000007735afd9/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/9cc8ec/00000000000000007735afd9/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/9cc8ec/00000000000000007735afd9/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/58e309/00000000000000007735afe1/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff2"),url("https://use.typekit.net/af/58e309/00000000000000007735afe1/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff"),url("https://use.typekit.net/af/58e309/00000000000000007735afe1/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("opentype");
+            font-display:auto;font-style:italic;font-weight:200;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/35b7e6/00000000000000007735afe4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/35b7e6/00000000000000007735afe4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/35b7e6/00000000000000007735afe4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/b97042/00000000000000007735afe8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"),url("https://use.typekit.net/af/b97042/00000000000000007735afe8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"),url("https://use.typekit.net/af/b97042/00000000000000007735afe8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");
+            font-display:auto;font-style:italic;font-weight:300;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/570287/00000000000000007735afea/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/570287/00000000000000007735afea/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/570287/00000000000000007735afea/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+            font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/c2b6e5/00000000000000007735afee/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/c2b6e5/00000000000000007735afee/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/c2b6e5/00000000000000007735afee/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/2bc98d/00000000000000007735aff1/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/2bc98d/00000000000000007735aff1/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/2bc98d/00000000000000007735aff1/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/cce580/00000000000000007735aff2/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/cce580/00000000000000007735aff2/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/cce580/00000000000000007735aff2/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");
+            font-display:auto;font-style:italic;font-weight:600;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/efa8e9/00000000000000007735aff4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/efa8e9/00000000000000007735aff4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/efa8e9/00000000000000007735aff4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+            font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/1fe1ce/00000000000000007735aff6/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/1fe1ce/00000000000000007735aff6/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/1fe1ce/00000000000000007735aff6/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/dc88f0/00000000000000007735aff7/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/dc88f0/00000000000000007735aff7/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/dc88f0/00000000000000007735aff7/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:800;font-stretch:normal;
+            }
+            
+            @font-face {
+            font-family:"din-2014";
+            src:url("https://use.typekit.net/af/245a1a/00000000000000007735aff8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff2"),url("https://use.typekit.net/af/245a1a/00000000000000007735aff8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff"),url("https://use.typekit.net/af/245a1a/00000000000000007735aff8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("opentype");
+            font-display:auto;font-style:italic;font-weight:800;font-stretch:normal;
+            }
+            ::-webkit-scrollbar {
+                display: none;
+            }
+            * {
+                background-color: transparent;
+                padding: 0;
+                margin: 0;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                -webkit-user-select: none;
+                -webkit-touch-callout: none;
+                -webkit-tap-highlight-color: transparent;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                font-family: "font";
+                text-transform: none;
+                text-decoration: none;
+                text-align: left;
+                color: black;
+                line-height: 1.2;
+            }
+            body {
+                background-color: black;
+            }
+            .gridContainer {
+                z-index: 0;
+                display: grid;
+                margin: 16rem 8rem;
+                width: calc(100vw - 2rem);
+                height: auto;
+            }
+            .description, .content, .quote {
+                color: rgba(235, 235, 235, 1);
+                font-family: "din-2014", sans-serif;
+            }
+            .description {
+                display: block;
+                position: sticky !important;
+                font-weight: 700;
+                font-style: normal;
+                color: rgba(0, 0, 0, 1);
+                -webkit-text-stroke-color: rgba(235, 235, 235, 1);
+            }
+            .content {
+                font-weight: 300;
+                font-style: normal;
+            }
+            .quote {
+    z-index: 1;
+    font-weight: 700;
+    font-style: italic;
+}
+            @media screen and (min-width: 48rem) /* desktop */ {
+                .gridContainer {
+                    grid-template-columns: repeat(32, calc(calc(100vw - 16rem) / 32));
+                    grid-template-rows: repeat(32, calc(calc(100vw - 8rem) / 32));
+                }
+                /* column and row values +1 */
+                .description {
+                    font-size: 8rem;
+                    top: 16rem;
+                    -webkit-text-stroke-width: 1px;
+                }
+                .content {
+                    transform: translate(0rem, .15rem); /* font to baseline */
+                    font-size: 1rem;
+                }
+                .quote {
+                    font-size: 2rem;
+                }
+
+
+
+
+
+
+
+
+                .gridItem000description {
+                    grid-column: 1 / 17;
+                    grid-row: 1 / 12;
+                }
+                .gridItem000quote {
+                    grid-column: 1 / 17;
+                    grid-row: 4 / 9;
+                }
+                .gridItem000content {
+                    grid-column: 3 / 17;
+                    grid-row: 7 / 9;
+                }
+
+
+
+
+
+
+                .gridItem001description {
+                    grid-column: 19 / 33;
+                    grid-row: 7 / 19;
+                }
+                .gridItem001quote {
+                    grid-column: 19 / 33;
+                    grid-row: 10 / 20;
+                }
+                .gridItem001content {
+                    grid-column: 11 / 23;
+                    grid-row: 13 / 20;
+                }
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="gridContainer">
+            <div class="gridItem000description">
+                <div class="description">
+                    Lorem ipsum
+                </div>  
+            </div>
+            <div class="quote gridItem000quote">
+                &ldquo;
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+                &bdquo;
+            </div>
+            <div class="content gridItem000content">
+
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                <br><br>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+
+
+
+
+
+            <div class="gridItem001description">
+                <div class="description">
+                    Lorem ipsum
+                </div>  
+            </div>
+            <div class="quote gridItem001quote">
+                &ldquo;
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+                &bdquo;
+            </div>
+            <div class="content gridItem001content">
+
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                <br><br>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+        </div>
+    </body>
+</html>
