@@ -112,46 +112,64 @@
     text-transform: none;
     text-decoration: none;
     vertical-align: bottom;
+    font-family: "din-2014", sans-serif;
 }
 body {
     background-color: rgba(0, 0, 0, 1);
+    margin: 8rem 2rem 8rem 2rem;
 }
-.article {
-    display: table;
-    margin: 4rem auto 4rem auto;
+.container {
+    background-color: rgba(0, 255, 0, .2);
 }
-.description, .content, .quote {
-    color: rgba(235, 235, 235, 1);
-    font-family: "din-2014", sans-serif;
+.description, .quote, .content {
+    margin: 2rem 0rem 0rem 0rem;
+}
+.description, .quote {
+    font-weight: 700;
+}
+.quote, .content {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: white;
+}
+.description, .content {
+    font-style: normal;
 }
 .description {
-    display: block;
-    z-index: 0;
+    top: 8rem;
+    font-size: 4rem;
+    line-height: 2.8rem;
     position: sticky !important;
-    font-weight: 700;
-    font-style: normal;
-    color: rgba(0, 0, 0, 1);
-    -webkit-text-stroke-color: rgba(235, 235, 235, 1);
-}
-.content {
-    display: table-cell;
-    z-index: 1;
-    font-weight: 300;
-    font-style: normal;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(235, 235, 235, 1);
 }
 .quote {
-    z-index: 1;
-    font-weight: 700;
     font-style: italic;
+    margin-left: 4rem;
+}
+.content {
+    font-weight: 300;
+    margin-left: 2rem;
 }
 .spacing {
-    display: block;
+    height: 2rem;
 }
-img {
-    display: block;
-    margin: auto;
+.indent {
+    text-indent: 2rem;
 }
-@media screen and (max-width: 48rem) /* mobile */ {
+
+
+
+
+
+/*
+
+
+
+
+
+
+@media screen and (max-width: 48rem) /* mobile *//* {
     body {
         margin: calc(50vh - 1rem) auto calc(50vh - 1rem) auto;
     }
@@ -162,13 +180,13 @@ img {
         height: 2rem;
         width: 8rem;
         font-size: 4rem;
-        line-height: 1.2rem; /* font to baseline */
+        line-height: 1.2rem; /* font to baseline *//*
         top: calc(50vh - 1rem);
         -webkit-text-stroke-width: 1px;
     }
     .content {
         width: 26rem;
-        transform: translate(0rem, .15rem); /* font to baseline */
+        transform: translate(0rem, .15rem); /* font to baseline *//*
         font-size: 1rem;
         line-height: 1rem;
     }
@@ -184,7 +202,7 @@ img {
         max-width: 24rem;
     }
 }
-@media screen and (min-width: 48rem) /* desktop */ {
+@media screen and (min-width: 48rem) /* desktop *//* {
     body {
         margin: calc(50vh - 2rem) auto calc(50vh - 2rem) auto;
     }
@@ -195,13 +213,13 @@ img {
         height: 4rem;
         width: 24rem;
         font-size: 8rem;
-        line-height: 2.4rem; /* font to baseline */
+        line-height: 2.4rem; /* font to baseline *//*
         top: calc(50vh - 2rem);
         -webkit-text-stroke-width: 2px;
     }
     .content {
         width: 24rem;
-        transform: translate(0rem, .15rem); /* font to baseline */
+        transform: translate(0rem, .15rem); /* font to baseline *//*
         font-size: 1rem;
         line-height: 1rem;
     }
@@ -229,18 +247,10 @@ img {
 
 
 
-/* DEBUG *//*
-.article {
-    background-color: green;
-}
-.description {
-    background-color: red;
-}
-.content {
-    background-color: transparent;
-}
-.quote {
-    background-color: red;
+/* DEBUG */
+
+.description, .quote, .content {
+    background-color: rgba(255, 0, 0, .2);
 }
 .X, .Y {
     display: block;
@@ -260,7 +270,7 @@ img {
     top: 0px;
     left: calc(50vw - .5px);
 }
-*/
+*//*
 
 
 img, .article :not(.introduction) {
@@ -385,4 +395,4 @@ font {
     font-family: "din-2014", sans-serif;
     font-weight: 800;
     font-style: italic;
-}
+} */

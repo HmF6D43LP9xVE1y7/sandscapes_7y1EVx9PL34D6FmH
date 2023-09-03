@@ -103,9 +103,6 @@
             .gridContainer {
                 z-index: 0;
                 display: grid;
-                margin: 16rem 8rem;
-                width: calc(100vw - 2rem);
-                height: auto;
             }
             .description, .content, .quote {
                 color: rgba(235, 235, 235, 1);
@@ -116,7 +113,7 @@
                 position: sticky !important;
                 font-weight: 700;
                 font-style: normal;
-                color: rgba(0, 0, 0, 1);
+                color: transparent;
                 -webkit-text-stroke-color: rgba(235, 235, 235, 1);
             }
             .content {
@@ -124,14 +121,66 @@
                 font-style: normal;
             }
             .quote {
-    z-index: 1;
-    font-weight: 700;
-    font-style: italic;
+                font-weight: 700;
+                font-style: italic;
+            }
+
+
+
+/* DEBUG */
+.description, .content, .quote {
+  background-color: rgba(255, 255, 255, .25);
 }
+
+
+
+
+
+            @media screen and (max-width: 48rem) /* mobile */ {
+
+                .description {
+                    font-size: 4rem;
+                    line-height: 2.8rem;
+                    top: 8rem;
+                    -webkit-text-stroke-width: 1px;
+                }
+                .content, .quote {
+                    transform: translate(0rem, .28rem); /* font to baseline */
+                    font-size: 1rem;
+                    line-height: 1.2rem;
+                }
+                .gridContainer {
+                    grid-template-columns: repeat(3, 2rem);
+                    /* grid-template-rows: repeat(28, calc(calc(100vw - 4rem) / 7)); */
+                    margin: 8rem 2rem 8rem 2rem;
+                }
+                .description, .gridItem000content, .gridItem000description, .gridItem000quote, .gridItem001content, .gridItem001description, .gridItem001quote {
+                    margin: 0rem 0rem 2rem 0rem;
+                }
+                .gridItem000description, .gridItem001description {
+                    grid-column: 1 / 8;
+                }
+                .gridItem000quote, .gridItem001quote {
+                    grid-column: 1 / 8;
+                    margin-left: 4rem;
+                }
+                .gridItem000content, .gridItem001content {
+                    grid-column: 1 / 8;
+                    margin-left: 2rem;
+                }
+                .spacing {
+                    height: 2rem;
+                    display: block;
+                }
+            }
+
+
+
             @media screen and (min-width: 48rem) /* desktop */ {
                 .gridContainer {
                     grid-template-columns: repeat(32, calc(calc(100vw - 16rem) / 32));
                     grid-template-rows: repeat(32, calc(calc(100vw - 8rem) / 32));
+                    margin: 16rem 8rem 16rem 8rem;
                 }
                 /* column and row values +1 */
                 .description {
@@ -148,12 +197,6 @@
                 }
 
 
-
-
-
-
-
-
                 .gridItem000description {
                     grid-column: 1 / 17;
                     grid-row: 1 / 12;
@@ -168,21 +211,17 @@
                 }
 
 
-
-
-
-
                 .gridItem001description {
-                    grid-column: 19 / 33;
-                    grid-row: 7 / 19;
+                    grid-column: 0 / 0;
+                    grid-row: 0 / 0;
                 }
                 .gridItem001quote {
-                    grid-column: 19 / 33;
-                    grid-row: 10 / 20;
+                    grid-column: 0 / 0;
+                    grid-row: 0 / 0;
                 }
                 .gridItem001content {
-                    grid-column: 11 / 23;
-                    grid-row: 13 / 20;
+                    grid-column: 0 / 0;
+                    grid-row: 0 / 0;
                 }
 
             }
@@ -191,22 +230,34 @@
     </head>
     <body>
         <div class="gridContainer">
+            <div class="section">
+
+            </div>
+            <div class="quote">
+                
+            </div>
+            <div class="content">
+                
+            </div>
+        </div>
+        <div class="gridContainer">
             <div class="gridItem000description">
                 <div class="description">
-                    Lorem ipsum
+                    placeholder
                 </div>  
+                <div class="quote gridItem000quote">
+                    &ldquo;
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+                    &bdquo;
+                </div>
+                <div class="content gridItem000content">
+    
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    <div class="spacing"></div>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </div>
             </div>
-            <div class="quote gridItem000quote">
-                &ldquo;
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
-                &bdquo;
-            </div>
-            <div class="content gridItem000content">
 
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                <br><br>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </div>
 
 
 
@@ -214,20 +265,21 @@
 
             <div class="gridItem001description">
                 <div class="description">
-                    Lorem ipsum
+                    placeholder
                 </div>  
+                <div class="quote gridItem001quote">
+                    &ldquo;
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+                    &bdquo;
+                </div>
+                <div class="content gridItem001content">
+    
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </div>
             </div>
-            <div class="quote gridItem001quote">
-                &ldquo;
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
-                &bdquo;
-            </div>
-            <div class="content gridItem001content">
 
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                <br><br>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </div>
         </div>
     </body>
 </html>
