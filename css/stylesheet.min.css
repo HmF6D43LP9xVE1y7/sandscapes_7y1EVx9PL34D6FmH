@@ -118,9 +118,6 @@ body {
     background-color: rgba(0, 0, 0, 1);
     margin: 8rem 2rem 8rem 2rem;
 }
-.container {
-    background-color: rgba(0, 255, 0, .2);
-}
 .description, .quote, .content {
     margin: 2rem 0rem 0rem 0rem;
 }
@@ -136,6 +133,7 @@ body {
     font-style: normal;
 }
 .description {
+    overflow-wrap: break-word; /* needed? */
     top: 8rem;
     font-size: 4rem;
     line-height: 2.8rem;
@@ -247,7 +245,7 @@ body {
 
 
 
-/* DEBUG */
+/* DEBUG *//*
 
 .description, .quote, .content {
     background-color: rgba(255, 0, 0, .2);
