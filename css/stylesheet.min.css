@@ -206,12 +206,17 @@ body {
 
 
 
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: 32rem) and (orientation: portrait){
     * {
         background-color: rgba(255, 255, 255, .2);
     }
 }
-@media screen and (min-width: 35rem) {
+@media screen and (max-width: 32rem) and (orientation: landscape){
+    * {
+        background-color: rgba(255, 0, 255, .2);
+    }
+}
+@media screen and (min-width: 32rem) {
     * {
         background-color: rgba(255, 0, 0, .2);
     }
@@ -221,12 +226,11 @@ body {
         background-color: rgba(0, 255, 0, .2);;
     }
 }
-@media screen and (min-width: 135rem) {
+@media screen and (min-width: 128rem) {
     * {
         background-color: rgba(0, 0, 255, .2);
     }
 }
-
 
 
 /*

@@ -38,6 +38,7 @@
         </title>
     </head>
     <body oncontextmenu="return false">
+        <!--
         <div class="X"></div><div class="Y"></div>
         <div class="container">
             <div class="description">
@@ -170,5 +171,23 @@
                 Monopol Berlin
             </div>
         </div>
+
+    -->
+
+            <div>HEIGHT <span style="color: white;" id="height"></span> rem</div>
+            <div>WIDTH <span style="color: white;" id="width"></span> rem</div>
+        
+        <script>
+                const heightOutput = document.querySelector("#height");
+                const widthOutput = document.querySelector("#width");
+
+                function updateSize() {
+                    heightOutput.textContent = window.innerHeight / 16;
+                    widthOutput.textContent = window.innerWidth / 16;
+                }
+                updateSize();
+                window.addEventListener("resize", updateSize);
+
+        </script>
     </body>
 </html>
