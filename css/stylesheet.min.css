@@ -206,6 +206,28 @@ body {
 
 
 
+@media screen and (max-width: 35rem) {
+    * {
+        background-color: rgba(255, 255, 255, .2);
+    }
+}
+@media screen and (min-width: 35rem) {
+    * {
+        background-color: rgba(255, 0, 0, .2);
+    }
+}
+@media screen and (min-width: 48rem) {
+    * {
+        background-color: rgba(0, 255, 0, .2);;
+    }
+}
+@media screen and (min-width: 135rem) {
+    * {
+        background-color: rgba(0, 0, 255, .2);
+    }
+}
+
+
 
 /*
 
