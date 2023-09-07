@@ -216,9 +216,12 @@ a:hover {
     font-style: normal;
 }
 .description {
-    overflow-wrap: break-word; /* needed? */
     position: sticky !important;
     color: transparent;
+    hyphenate-character: ' -';
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 .quote {
     font-style: italic;
@@ -226,7 +229,6 @@ a:hover {
 .content {
     font-weight: 300;
 }
-
 
 
 
@@ -262,26 +264,17 @@ a:hover {
     .indent {
         text-indent: 4rem;
     }
-    * {
-        background-color: rgba(0, 255, 255, .1);
-    }
 }
 /* tablet */
 @media screen and (min-width : 80rem) and (max-width : 88rem) {
     body {
         margin: 8rem 4rem 8rem 4rem;
     }
-    * {
-        background-color: rgba(255, 0, 255, .1);
-    }
 }
 /* desktop small */
 @media screen and (min-width : 88rem) and (max-width : 104rem) {
     body {
         margin: 8rem 8rem 8rem 8rem;
-    }
-    * {
-        background-color: rgba(0, 0, 255, .1);
     }
 }
 /* desktop large */
@@ -312,9 +305,6 @@ a:hover {
     .indent {
         text-indent: 8rem;
     }
-    * {
-        background-color: rgba(0, 255, 0, .1);
-    }
 }
 @media screen and (min-width: 104rem) {
     body {
@@ -323,12 +313,100 @@ a:hover {
     .description {
         top: 8rem;
     }
-    * {
-        background-color: rgba(255, 0, 0, .1);
+}
+
+
+
+
+
+
+
+
+.animFirst, .animA, .animB, .animC, .animD {
+    animation: anim;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+.animFirst {
+    animation-delay: 0s;
+}
+.animA {
+    animation-delay: 1s;
+}
+.animB {
+    animation-delay: 1.1s;
+}
+.animC {
+    animation-delay: 1.2s;
+}
+.animD {
+    animation-delay: 1.3s;
+}
+@keyframes anim {
+    from {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+    to {
+        opacity: 1;
     }
 }
 
 
+
+
+
+
+
+
+
+/* DEBUG *//*
+
+.X, .Y {
+    display: block;
+    position: fixed;
+    background-color: rgba(255, 0, 0, 1);
+    z-index: 500;
+}
+.X {
+    height: 1px;
+    width: 100vw;
+    left: 0px;
+    top: calc(50vh - .5px);
+}
+.Y {
+    width: 1px;
+    height: 100vh;
+    top: 0px;
+    left: calc(50vw - .5px);
+}
+@media screen and (max-width: 80rem) {
+    * {
+        background-color: rgba(0, 255, 255, .1);
+    }
+}
+@media screen and (min-width : 80rem) and (max-width : 88rem) {
+    * {
+        background-color: rgba(255, 0, 255, .1);
+    }
+}@media screen and (min-width : 88rem) and (max-width : 104rem) {
+    * {
+        background-color: rgba(0, 0, 255, .1);
+    }
+}
+@media screen and (min-width : 80rem) {
+    * {
+        background-color: rgba(0, 255, 0, .1);
+    }
+}
+@media screen and (min-width: 104rem) {
+    * {
+        background-color: rgba(255, 0, 0, .1);
+    }
+}
 /*
 
 
@@ -414,26 +492,7 @@ a:hover {
 
 
 
-/* DEBUG */
 
-.X, .Y {
-    display: block;
-    position: fixed;
-    background-color: rgba(255, 0, 0, 1);
-    z-index: 500;
-}
-.X {
-    height: 1px;
-    width: 100vw;
-    left: 0px;
-    top: calc(50vh - .5px);
-}
-.Y {
-    width: 1px;
-    height: 100vh;
-    top: 0px;
-    left: calc(50vw - .5px);
-}
 /*
 @media screen and (max-width: 32rem) and (orientation: portrait){
     * {
@@ -463,38 +522,10 @@ a:hover {
 */
 
 
-/*
-img, .article :not(.introduction) {
-    animation: anim;
-    animation-duration: 2s;
 
-    opacity: 0;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-    animation-delay: 1s;
-}
-.introduction {
-    animation: anim;
-    animation-duration: 2s;
-
-    opacity: 0;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-}
-@keyframes anim {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 /*
 
-  
+  /*
 a,
 a:hover {
     pointer-events: all;
