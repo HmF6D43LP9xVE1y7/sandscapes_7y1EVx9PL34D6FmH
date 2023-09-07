@@ -137,7 +137,7 @@ body {
 .content {
     font-weight: 300;
 }
-@media screen and (max-width: 48rem) /* mobile */ {
+@media screen and (max-width: 76rem) /* mobile */ {
     body {
         margin: 8rem 2rem 8rem 2rem;
     }
@@ -167,13 +167,12 @@ body {
         text-indent: 2rem;
     }
 }
-@media screen and (min-width: 48rem) /* desktop */ {
-    * {
-        /* background-color: rgba(255, 0, 0, .2); */
-    }
+@media screen and (min-device-width : 76rem) and (max-device-width : 104rem) {
     body {
         margin: 16rem 2rem 8rem 2rem;
     }
+}
+@media screen and (min-device-width : 76rem) {
     .description, .quote, .content {
         margin: 4rem 0rem 0rem 0rem;
     }
@@ -182,25 +181,28 @@ body {
         line-height: 6.5rem; /* 5.6rem */
         -webkit-text-stroke: 2px rgba(235, 235, 235, 1);
         top: 16rem;
-        margin-left: 8rem;
     }
     .quote {
         font-size: 3rem; /* 2rem */
         line-height: 3.6rem; /* 2.4rem */
-        max-width: 56rem;
-        margin-left: 24rem;
+        margin-left: 16rem;
     }
     .content {
         font-size: 1.5rem;
         line-height: 1.8rem;
-        max-width: 48rem;
-        margin-left: 16rem;
+        max-width: 56rem;
+        margin-left: 8rem;
     }
     .spacing {
         height: 4rem;
     }
     .indent {
-        text-indent: 4rem;
+        text-indent: 8rem;
+    }
+}
+@media screen and (min-device-width: 104rem) /* desktop */ {
+    body {
+        margin: 16rem 16rem 8rem 16rem;
     }
 }
 
