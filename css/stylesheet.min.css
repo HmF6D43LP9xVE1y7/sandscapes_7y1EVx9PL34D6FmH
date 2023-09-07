@@ -226,7 +226,17 @@ a:hover {
 .content {
     font-weight: 300;
 }
-@media screen and (max-width: 76rem) /* mobile */ {
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 80rem) /* mobile */ {
     body {
         margin: 8rem 2rem 8rem 2rem;
     }
@@ -252,13 +262,30 @@ a:hover {
     .indent {
         text-indent: 4rem;
     }
-}
-@media screen and (min-width : 76rem) and (max-width : 104rem) {
-    body {
-        margin: 8rem 2rem 8rem 2rem;
+    * {
+        background-color: rgba(0, 255, 255, .1);
     }
 }
-@media screen and (min-width : 76rem) {
+/* tablet */
+@media screen and (min-width : 80rem) and (max-width : 88rem) {
+    body {
+        margin: 8rem 4rem 8rem 4rem;
+    }
+    * {
+        background-color: rgba(255, 0, 255, .1);
+    }
+}
+/* desktop small */
+@media screen and (min-width : 88rem) and (max-width : 104rem) {
+    body {
+        margin: 8rem 8rem 8rem 8rem;
+    }
+    * {
+        background-color: rgba(0, 0, 255, .1);
+    }
+}
+/* desktop large */
+@media screen and (min-width : 80rem) {
     .description, .quote, .content {
         margin: 4rem 0rem 0rem 0rem;
     }
@@ -285,13 +312,19 @@ a:hover {
     .indent {
         text-indent: 8rem;
     }
+    * {
+        background-color: rgba(0, 255, 0, .1);
+    }
 }
-@media screen and (min-width: 104rem) /* desktop */ {
+@media screen and (min-width: 104rem) {
     body {
-        margin: 16rem 16rem 16rem 16rem;
+        margin: 8rem 16rem 8rem 16rem;
     }
     .description {
-        top: 16rem;
+        top: 8rem;
+    }
+    * {
+        background-color: rgba(255, 0, 0, .1);
     }
 }
 
@@ -381,11 +414,8 @@ a:hover {
 
 
 
-/* DEBUG *//*
+/* DEBUG */
 
-.description, .quote, .content {
-    background-color: rgba(255, 0, 0, .2);
-}
 .X, .Y {
     display: block;
     position: fixed;
@@ -404,6 +434,7 @@ a:hover {
     top: 0px;
     left: calc(50vw - .5px);
 }
+/*
 @media screen and (max-width: 32rem) and (orientation: portrait){
     * {
         background-color: rgba(255, 255, 255, .2);
