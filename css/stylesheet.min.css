@@ -206,8 +206,11 @@ body {
 .description, .quote {
     font-weight: 700;
 }
-.quote, .content {
+.quote, .content, a {
     color: white;
+}
+a:hover {
+    color: red;
 }
 .description, .content {
     font-style: normal;
