@@ -1,93 +1,179 @@
+@font-face {
+    font-family: "din-2014";
+    src: url('../assets/font/din_2014_300_normal.eot'); /* IE9 Compat Modes */
+    src: url('../assets/font/din_2014_300_normal.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/font/din_2014_300_normal.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/font/din_2014_300_normal.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../assets/font/din_2014_300_normal.ttf') format('truetype'), /* Safari, Androi, iOS */
+         url('../assets/font/din_2014_300_normal.svg#din-2014') format('svg'); /* Legacy iOS */
+    font-display: auto;
+    font-stretch: normal;
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "din-2014";
+    src: url('../assets/font/din_2014_300_italic.eot'); /* IE9 Compat Modes */
+    src: url('../assets/font/din_2014_300_italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/font/din_2014_300_italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/font/din_2014_300_italic.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../assets/font/din_2014_300_italic.ttf') format('truetype'), /* Safari, Androi, iOS */
+         url('../assets/font/din_2014_300_italic.svg#din-2014') format('svg'); /* Legacy iOS */
+    font-display: auto;
+    font-stretch: normal;
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "din-2014";
+    src: url('../assets/font/din_2014_700_normal.eot'); /* IE9 Compat Modes */
+    src: url('../assets/font/din_2014_700_normal.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/font/din_2014_700_normal.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/font/din_2014_700_normal.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../assets/font/din_2014_700_normal.ttf') format('truetype'), /* Safari, Androi, iOS */
+         url('../assets/font/din_2014_700_normal.svg#din-2014') format('svg'); /* Legacy iOS */
+    font-display: auto;
+    font-stretch: normal;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "din-2014";
+    src: url('../assets/font/din_2014_700_italic.eot'); /* IE9 Compat Modes */
+    src: url('../assets/font/din_2014_700_italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/font/din_2014_700_italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/font/din_2014_700_italic.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../assets/font/din_2014_700_italic.ttf') format('truetype'), /* Safari, Androi, iOS */
+         url('../assets/font/din_2014_700_italic.svg#din-2014') format('svg'); /* Legacy iOS */
+    font-display: auto;
+    font-stretch: normal;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
 /*
-@font-face {
-    font-family: 'font';
-    src: url('../assets/font/asset_font.eot');
-    src: url('../assets/font/asset_font.eot?#iefix') format('embedded-opentype'), url('../assets/font/asset_font.woff2') format('woff2'), url('../assets/font/asset_font.woff') format('woff'), url('../assets/font/asset_font.ttf') format('truetype'), url('../assets/font/asset_font.svg#d-dinregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'windsor';
-    src: url('../assets/font/windsord-bol1.eot');
-    src: url('../assets/font/windsord-bol1.eot?#iefix') format('embedded-opentype'), url('../assets/font/windsord-bol1.woff2') format('woff2'), url('../assets/font/windsord-bol1.woff') format('woff'), url('../assets/font/windsord-bol1.ttf') format('truetype'), url('../assets/font/windsord-bol1.svg#d-dinregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
-
-
-
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/9cc8ec/00000000000000007735afd9/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/9cc8ec/00000000000000007735afd9/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/9cc8ec/00000000000000007735afd9/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
     font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
     }
-    
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/58e309/00000000000000007735afe1/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff2"),url("https://use.typekit.net/af/58e309/00000000000000007735afe1/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff"),url("https://use.typekit.net/af/58e309/00000000000000007735afe1/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("opentype");
     font-display:auto;font-style:italic;font-weight:200;font-stretch:normal;
     }
-    
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/35b7e6/00000000000000007735afe4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/35b7e6/00000000000000007735afe4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/35b7e6/00000000000000007735afe4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
     font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;
     }
-    
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/b97042/00000000000000007735afe8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"),url("https://use.typekit.net/af/b97042/00000000000000007735afe8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"),url("https://use.typekit.net/af/b97042/00000000000000007735afe8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");
     font-display:auto;font-style:italic;font-weight:300;font-stretch:normal;
     }
-    
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/570287/00000000000000007735afea/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/570287/00000000000000007735afea/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/570287/00000000000000007735afea/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
     font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
     }
-    
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/c2b6e5/00000000000000007735afee/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/c2b6e5/00000000000000007735afee/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/c2b6e5/00000000000000007735afee/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
     font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
     }
-    
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/2bc98d/00000000000000007735aff1/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/2bc98d/00000000000000007735aff1/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/2bc98d/00000000000000007735aff1/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
     font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
     }
-    
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/cce580/00000000000000007735aff2/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/cce580/00000000000000007735aff2/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/cce580/00000000000000007735aff2/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");
     font-display:auto;font-style:italic;font-weight:600;font-stretch:normal;
     }
-    
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/efa8e9/00000000000000007735aff4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/efa8e9/00000000000000007735aff4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/efa8e9/00000000000000007735aff4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
     font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
     }
-    
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/1fe1ce/00000000000000007735aff6/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/1fe1ce/00000000000000007735aff6/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/1fe1ce/00000000000000007735aff6/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
     font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
     }
-    
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/dc88f0/00000000000000007735aff7/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/dc88f0/00000000000000007735aff7/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/dc88f0/00000000000000007735aff7/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
     font-display:auto;font-style:normal;font-weight:800;font-stretch:normal;
     }
-    
     @font-face {
     font-family:"din-2014";
     src:url("https://use.typekit.net/af/245a1a/00000000000000007735aff8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff2"),url("https://use.typekit.net/af/245a1a/00000000000000007735aff8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("woff"),url("https://use.typekit.net/af/245a1a/00000000000000007735aff8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3") format("opentype");
     font-display:auto;font-style:italic;font-weight:800;font-stretch:normal;
     }
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -112,7 +198,7 @@
     text-transform: none;
     text-decoration: none;
     vertical-align: bottom;
-    font-family: "din-2014", sans-serif;
+    font-family: "din-2014";
 }
 body {
     background-color: rgba(0, 0, 0, 1);
@@ -147,7 +233,7 @@ body {
     .description {
         font-size: 4rem;
         line-height: 2.8rem;
-        -webkit-text-stroke: 1px rgba(235, 235, 235, 1);
+        -webkit-text-stroke: 1.5px rgba(235, 235, 235, 1);
         top: 8rem;
     }
     .quote, .content {
@@ -157,22 +243,19 @@ body {
     .quote {
         margin-left: 4rem;
     }
-    .content {
-        margin-left: 2rem;
-    }
     .spacing {
         height: 2rem;
     }
     .indent {
-        text-indent: 2rem;
+        text-indent: 4rem;
     }
 }
-@media screen and (min-device-width : 76rem) and (max-device-width : 104rem) {
+@media screen and (min-width : 76rem) and (max-width : 104rem) {
     body {
-        margin: 16rem 2rem 8rem 2rem;
+        margin: 8rem 2rem 8rem 2rem;
     }
 }
-@media screen and (min-device-width : 76rem) {
+@media screen and (min-width : 76rem) {
     .description, .quote, .content {
         margin: 4rem 0rem 0rem 0rem;
     }
@@ -180,7 +263,7 @@ body {
         font-size: 9rem; /* 8rem */
         line-height: 6.5rem; /* 5.6rem */
         -webkit-text-stroke: 2px rgba(235, 235, 235, 1);
-        top: 16rem;
+        top: 8rem;
     }
     .quote {
         font-size: 3rem; /* 2rem */
@@ -200,37 +283,12 @@ body {
         text-indent: 8rem;
     }
 }
-@media screen and (min-device-width: 104rem) /* desktop */ {
+@media screen and (min-width: 104rem) /* desktop */ {
     body {
-        margin: 16rem 16rem 8rem 16rem;
+        margin: 16rem 16rem 16rem 16rem;
     }
-}
-
-
-
-@media screen and (max-width: 32rem) and (orientation: portrait){
-    * {
-        background-color: rgba(255, 255, 255, .2);
-    }
-}
-@media screen and (max-width: 32rem) and (orientation: landscape){
-    * {
-        background-color: rgba(255, 0, 255, .2);
-    }
-}
-@media screen and (min-width: 32rem) {
-    * {
-        background-color: rgba(255, 0, 0, .2);
-    }
-}
-@media screen and (min-width: 48rem) {
-    * {
-        background-color: rgba(0, 255, 0, .2);;
-    }
-}
-@media screen and (min-width: 128rem) {
-    * {
-        background-color: rgba(0, 0, 255, .2);
+    .description {
+        top: 16rem;
     }
 }
 
@@ -343,9 +401,35 @@ body {
     top: 0px;
     left: calc(50vw - .5px);
 }
-*//*
+@media screen and (max-width: 32rem) and (orientation: portrait){
+    * {
+        background-color: rgba(255, 255, 255, .2);
+    }
+}
+@media screen and (max-width: 32rem) and (orientation: landscape){
+    * {
+        background-color: rgba(255, 0, 255, .2);
+    }
+}
+@media screen and (min-width: 32rem) {
+    * {
+        background-color: rgba(255, 0, 0, .2);
+    }
+}
+@media screen and (min-width: 48rem) {
+    * {
+        background-color: rgba(0, 255, 0, .2);;
+    }
+}
+@media screen and (min-width: 128rem) {
+    * {
+        background-color: rgba(0, 0, 255, .2);
+    }
+}
+*/
 
 
+/*
 img, .article :not(.introduction) {
     animation: anim;
     animation-duration: 2s;
@@ -394,78 +478,39 @@ a:hover {
     color: rgba(135, 135, 135, 1) !important;
 }
 
-
-
-
 /*
 
 
 
 
 
-.article {
-    max-width: 30rem;
-}
-.category, .content {
-    position: -webkit-sticky; /* needed??? *//*
-    position: sticky;
-}
-.indent {
-    text-indent: 2.5rem;
-    margin: 0;
-}
+/*
+table#imgtest th,
+  table#imgtest td {text-align: center; padding: 5px;}
+table#imgtest tbody th {text-align: right;}
+table#imgtest img {width: 25px; height: 25px;}
 
+div:empty, span:empty,
+li:empty, p:empty,
+td:empty, th:empty {padding: 0.5em; background: yellow;}
 
+*[style], font, center {outline: 5px solid red;}
+*[class=""], *[id=""] {outline: 5px dotted red;}
 
+img[alt=""] {border: 3px dotted red;}
+img:not([alt]) {border: 5px solid red;}
+img[title=""] {outline: 3px dotted fuchsia;}
+img:not([title]) {outline: 5px solid fuchsia;}
 
+table:not([summary]) {outline: 5px solid red;}
+table[summary=""] {outline: 3px dotted red;}
+th {border: 2px solid red;}
+th[scope="col"], th[scope="row"] {border: none;}
 
+a[href]:not([title]) {border: 5px solid red;}
+a[title=""] {outline: 3px dotted red;}
+a[href="#"] {background: lime;}
+a[href=""] {background: fuchsia;}
 
-font {
-    font-family: "din-2014", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-
-    font-family: "din-2014", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-
-    font-family: "din-2014", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-
-    font-family: "din-2014", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-
-    font-family: "din-2014", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    font-family: "din-2014", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-
-    font-family: "din-2014", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-
-    font-family: "din-2014", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-
-    font-family: "din-2014", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-
-    font-family: "din-2014", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-
-    font-family: "din-2014", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-
-    font-family: "din-2014", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-} */
+li {margin: 0.67em 0;}
+*/
