@@ -237,8 +237,8 @@ a:hover {
 
 
 
-
-@media screen and (max-width: 80rem) /* mobile */ {
+/* mobile */
+@media screen and (max-width: 50rem) {
     body {
         margin: 8rem 2rem 8rem 2rem;
     }
@@ -266,19 +266,19 @@ a:hover {
     }
 }
 /* tablet */
-@media screen and (min-width : 80rem) and (max-width : 88rem) {
+@media screen and (min-width : 50rem) and (max-width : 75rem) {
     body {
         margin: 8rem 4rem 8rem 4rem;
     }
 }
 /* desktop small */
-@media screen and (min-width : 88rem) and (max-width : 104rem) {
+@media screen and (min-width : 75rem) and (max-width : 104rem) {
     body {
         margin: 8rem 8rem 8rem 8rem;
     }
 }
 /* desktop large */
-@media screen and (min-width : 80rem) {
+@media screen and (min-width : 75rem) {
     .description, .quote, .content {
         margin: 4rem 0rem 0rem 0rem;
     }
@@ -370,30 +370,38 @@ a:hover {
     top: 0px;
     left: calc(50vw - .5px);
 }
-@media screen and (max-width: 80rem) {
-    * {
-        background-color: rgba(0, 255, 255, .1);
-    }
-}
-@media screen and (min-width : 80rem) and (max-width : 88rem) {
-    * {
-        background-color: rgba(255, 0, 255, .1);
-    }
-}@media screen and (min-width : 88rem) and (max-width : 104rem) {
-    * {
-        background-color: rgba(0, 0, 255, .1);
-    }
-}
-@media screen and (min-width : 80rem) {
-    * {
-        background-color: rgba(0, 255, 0, .1);
-    }
-}
-@media screen and (min-width: 104rem) {
+/* mobile */
+@media screen and (max-width: 50rem) {
     * {
         background-color: rgba(255, 0, 0, .1);
     }
 }
+/* tablet */
+@media screen and (min-width : 50rem) and (max-width : 75rem) {
+    * {
+        background-color: rgba(0, 255, 0, .1);
+    }
+}
+/* desktop small */
+@media screen and (min-width : 75rem) and (max-width : 104rem) {
+    * {
+        background-color: rgba(0, 0, 255, .1);
+    }
+}
+/* desktop large */
+@media screen and (min-width : 75rem) {
+    * {
+        background-color: rgba(0, 255, 255, .1);
+    }
+}
+@media screen and (min-width: 104rem) {
+    * {
+        background-color: rgba(255, 255, 0, .1);
+    }
+}
+
+
+
 /*
 
 
