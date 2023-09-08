@@ -209,9 +209,6 @@ body {
 .quote, .content, a {
     color: white;
 }
-a:hover {
-    color: red;
-}
 .description, .content {
     font-style: normal;
 }
@@ -238,12 +235,23 @@ a:hover {
 
 
 /* mobile */
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 42rem) {
+    * {
+        background-color: rgba(255, 0, 0, .1);
+    }
     body {
         margin: 8rem 2rem 8rem 2rem;
     }
+    .container {
+        max-width: 28rem;
+        margin: auto;
+    }
     .description, .quote, .content {
         margin: 2rem 0rem 0rem 0rem;
+    }
+    .quote, .content {
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
     .description {
         font-size: 4rem;
@@ -251,12 +259,11 @@ a:hover {
         -webkit-text-stroke: 1.5px rgba(235, 235, 235, 1);
         top: 8rem;
     }
-    .quote, .content {
-        font-size: 1rem;
-        line-height: 1.2rem;
-    }
     .quote {
         margin-left: 4rem;
+    }
+    .content {
+        max-width: 24rem;
     }
     .spacing {
         height: 2rem;
@@ -266,30 +273,67 @@ a:hover {
     }
 }
 /* tablet */
-@media screen and (min-width : 50rem) and (max-width : 75rem) {
-    body {
-        margin: 8rem 4rem 8rem 4rem;
+@media screen and (min-width: 42rem) and (max-width : 88rem) {
+    * {
+        background-color: rgba(0, 255, 0, .1);
     }
-}
-/* desktop small */
-@media screen and (min-width : 75rem) and (max-width : 104rem) {
     body {
-        margin: 8rem 8rem 8rem 8rem;
+        margin: 8rem 2rem 8rem 2rem;
     }
-}
-/* desktop large */
-@media screen and (min-width : 75rem) {
+    .container {
+        max-width: 46rem;
+        margin: auto;
+    }
     .description, .quote, .content {
-        margin: 4rem 0rem 0rem 0rem;
+        margin: 2rem 0rem 0rem 0rem;
     }
     .description {
-        font-size: 9rem; /* 8rem */
+        font-size: 6rem; /* 8rem */
         line-height: 6.5rem; /* 5.6rem */
         -webkit-text-stroke: 2px rgba(235, 235, 235, 1);
         top: 8rem;
     }
     .quote {
-        font-size: 3rem; /* 2rem */
+        font-size: 1.5rem; /* 2rem */
+        line-height: 2rem; /* 2.4rem */
+        margin-left: 12rem;
+    }
+    .content {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        max-width: 32rem;
+        margin-left: 6rem;
+    }
+    .spacing {
+        height: 3rem;
+    }
+    .indent {
+        text-indent: 6rem;
+    }
+}
+/* desktop */
+@media screen and (min-width: 88rem) {
+    * {
+        background-color: rgba(255, 255, 0, .1);
+    }
+    body {
+        margin: 8rem 8rem 8rem 8rem;
+    }
+    .container {
+        max-width: 72rem;
+        margin: auto;
+    }
+    .description, .quote, .content {
+        margin: 4rem 0rem 0rem 0rem;
+    }
+    .description {
+        font-size: 8rem; /* 8rem */
+        line-height: 5.6rem; /* 5.6rem */
+        -webkit-text-stroke: 2px rgba(235, 235, 235, 1);
+        top: 8rem;
+    }
+    .quote {
+        font-size: 2.8rem; /* 2rem */
         line-height: 3.6rem; /* 2.4rem */
         margin-left: 16rem;
     }
@@ -306,25 +350,17 @@ a:hover {
         text-indent: 8rem;
     }
 }
-@media screen and (min-width: 104rem) {
-    body {
-        margin: 8rem 16rem 8rem 16rem;
-    }
-    .description {
-        top: 8rem;
-    }
-}
 
 
 
 
 
 .observed {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: transform 1s ease, opacity 1s ease;
+    -moz-transition: transform 1s ease, opacity 1s ease;
+    -ms-transition: transform 1s ease, opacity 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
     transform: translateY(2rem);
     opacity: 0;
 }
@@ -348,19 +384,17 @@ a:hover {
 
 
 
-
-a,
-a:hover {
+a {
+    -webkit-transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    -ms-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    transition: opacity .3s ease;
     pointer-events: all;
-    transition: 0.3s;
-    -o-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
 }
 a:hover {
+    opacity: .3;
     cursor: pointer;
-    color: rgba(135, 135, 135, 1) !important;
 }
 
 
@@ -385,35 +419,6 @@ a:hover {
     height: 100vh;
     top: 0px;
     left: calc(50vw - .5px);
-}
-/* mobile */
-@media screen and (max-width: 50rem) {
-    * {
-        background-color: rgba(255, 0, 0, .1);
-    }
-}
-/* tablet */
-@media screen and (min-width : 50rem) and (max-width : 75rem) {
-    * {
-        background-color: rgba(0, 255, 0, .1);
-    }
-}
-/* desktop small */
-@media screen and (min-width : 75rem) and (max-width : 104rem) {
-    * {
-        background-color: rgba(0, 0, 255, .1);
-    }
-}
-/* desktop large */
-@media screen and (min-width : 75rem) {
-    * {
-        background-color: rgba(0, 255, 255, .1);
-    }
-}
-@media screen and (min-width: 104rem) {
-    * {
-        background-color: rgba(255, 255, 0, .1);
-    }
 }
 
 
