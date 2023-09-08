@@ -320,7 +320,11 @@ a:hover {
 
 
 .observed {
-    transition: transform 1s ease, opacity 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     transform: translateY(2rem);
     opacity: 0;
 }
@@ -345,7 +349,19 @@ a:hover {
 
 
 
-
+a,
+a:hover {
+    pointer-events: all;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+a:hover {
+    cursor: pointer;
+    color: rgba(135, 135, 135, 1) !important;
+}
 
 
 
@@ -517,28 +533,6 @@ a:hover {
 */
 
 
-
-/*
-
-  /*
-a,
-a:hover {
-    pointer-events: all;
-    transition: 0.3s;
-    -o-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
-}
-a {
-    width: fit-content;
-}
-a:hover {
-    cursor: pointer;
-    color: rgba(135, 135, 135, 1) !important;
-}
-
-/*
 
 
 
