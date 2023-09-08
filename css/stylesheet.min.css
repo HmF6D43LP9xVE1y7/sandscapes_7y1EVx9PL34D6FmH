@@ -235,10 +235,7 @@ body {
 
 
 /* mobile */
-@media screen and (max-width: 42rem) {
-    * {
-        background-color: rgba(255, 0, 0, .1);
-    }
+@media screen and (max-width: 60rem) {
     body {
         margin: 8rem 2rem 8rem 2rem;
     }
@@ -273,15 +270,12 @@ body {
     }
 }
 /* tablet */
-@media screen and (min-width: 42rem) and (max-width : 88rem) {
-    * {
-        background-color: rgba(0, 255, 0, .1);
-    }
+@media screen and (min-width: 60rem) and (max-width : 88rem) {
     body {
-        margin: 8rem 2rem 8rem 2rem;
+        margin: 8rem 6rem 8rem 6rem;
     }
     .container {
-        max-width: 46rem;
+        max-width: 48rem;
         margin: auto;
     }
     .description, .quote, .content {
@@ -289,19 +283,19 @@ body {
     }
     .description {
         font-size: 6rem; /* 8rem */
-        line-height: 6.5rem; /* 5.6rem */
+        line-height: 4.4rem; /* 5.6rem */
         -webkit-text-stroke: 2px rgba(235, 235, 235, 1);
         top: 8rem;
     }
     .quote {
         font-size: 1.5rem; /* 2rem */
-        line-height: 2rem; /* 2.4rem */
+        line-height: 1.8rem; /* 2.4rem */
         margin-left: 12rem;
     }
     .content {
         font-size: 1.5rem;
         line-height: 1.8rem;
-        max-width: 32rem;
+        max-width: 36rem;
         margin-left: 6rem;
     }
     .spacing {
@@ -313,9 +307,6 @@ body {
 }
 /* desktop */
 @media screen and (min-width: 88rem) {
-    * {
-        background-color: rgba(255, 255, 0, .1);
-    }
     body {
         margin: 8rem 8rem 8rem 8rem;
     }
@@ -334,7 +325,7 @@ body {
     }
     .quote {
         font-size: 2.8rem; /* 2rem */
-        line-height: 3.6rem; /* 2.4rem */
+        line-height: 3.2rem; /* 2.4rem */
         margin-left: 16rem;
     }
     .content {
@@ -372,6 +363,32 @@ body {
     animation: fadeIn 1s ease 0s 1 forwards;
     opacity: 0;
 }
+.delayA { animation-delay: .2s; }
+.delayB { animation-delay: .4s; }
+.delayC { animation-delay: .6s; }
+.delayD { animation-delay: .8s; }
+.delayE { animation-delay: 1s; }
+.delayF { animation-delay: 1.2s; }
+.delayG { animation-delay: 1.4s; }
+.delayH { animation-delay: 1.6s; }
+.delayI { animation-delay: 1.8s; }
+.delayJ { animation-delay: 2s; }
+.delayK { animation-delay: 2.2s; }
+.delayL { animation-delay: 2.4s; }
+.delayM { animation-delay: 2.6s; }
+.delayN { animation-delay: 2.8s; }
+.delayO { animation-delay: 3s; }
+.delayP { animation-delay: 3.2s; }
+.delayQ { animation-delay: 3.4s; }
+.delayR { animation-delay: 3.6s; }
+.delayS { animation-delay: 3.8s; }
+.delayT { animation-delay: 4s; }
+.delayU { animation-delay: 4.2s; }
+.delayV { animation-delay: 4.4s; }
+.delayW { animation-delay: 4.6s; }
+.delayX { animation-delay: 4.8s; }
+.delayY { animation-delay: 5s; }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -400,7 +417,7 @@ a:hover {
 
 
 
-/* DEBUG */
+/* DEBUG *//*
 
 .X, .Y {
     display: block;
@@ -421,7 +438,21 @@ a:hover {
     left: calc(50vw - .5px);
 }
 
-
+@media screen and (max-width: 42rem) {
+    * {
+        background-color: rgba(255, 0, 0, .1);
+    }
+}
+@media screen and (min-width: 42rem) and (max-width : 88rem) {
+    * {
+        background-color: rgba(0, 255, 0, .1);
+    }
+}
+@media screen and (min-width: 88rem) {
+    * {
+        background-color: rgba(255, 255, 0, .1);
+    }
+}
 
 /*
 
