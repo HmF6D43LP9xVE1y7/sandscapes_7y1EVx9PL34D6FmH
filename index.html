@@ -38,7 +38,26 @@
         </title>
     </head>
     <body oncontextmenu="return false">
+        <div style="color: yellow; font-size: 2rem;">
+            <div><span id="height"></span> x <span id="width"></span> rem</div>
+            <div><span id="heightpx"></span> x <span id="widthpx"></span> px</div>
+        </div>
+        <script>
+                const heightOutput = document.querySelector("#height");
+                const widthOutput = document.querySelector("#width");
+                const heightOutputPX = document.querySelector("#heightpx");
+                const widthOutputPX = document.querySelector("#widthpx");
 
+                function updateSize() {
+                    heightOutput.textContent = window.innerHeight / 16;
+                    widthOutput.textContent = window.innerWidth / 16;
+                    heightOutputPX.textContent = window.innerHeight;
+                    widthOutputPX.textContent = window.innerWidth;
+                }
+                updateSize();
+                window.addEventListener("resize", updateSize);
+
+        </script>
 
 
 
@@ -170,21 +189,5 @@
         </div>
         <script src="js/observer.min.js">
 		</script>
-        <!--
-        <div>HEIGHT <span style="color: white;" id="height"></span> rem</div>
-        <div>WIDTH <span style="color: white;" id="width"></span> rem</div>
-        <script>
-                const heightOutput = document.querySelector("#height");
-                const widthOutput = document.querySelector("#width");
-
-                function updateSize() {
-                    heightOutput.textContent = window.innerHeight / 16;
-                    widthOutput.textContent = window.innerWidth / 16;
-                }
-                updateSize();
-                window.addEventListener("resize", updateSize);
-
-        </script>
-        -->
     </body>
 </html>
