@@ -369,49 +369,20 @@ a:hover {
     color: rgba(255, 255, 255, .1);
     z-index: 1;
 }
-.marquee {
-    height: 35px;
-    width: 100%;
-  
-    position: relative;
-    
-    font-size: 300rem;
-    -webkit-text-stroke: 2px rgba(235, 235, 235, 1);
-    font-weight: 600;
-    transform: translateY(-500px);
-  }
-  
-  
-  /* would need to be adjusted depending on time */
-  .marquee .marqueeone{
-    animation: marquee 7s linear infinite;
-  }
-  
-  .marquee .marqueetwo{
-    animation: marquee 7s linear 5s infinite;
-  }
-  
-  /* even out the elements */
-  .marquee div {
+
+
+#video svg {
     position: absolute;
-    width: 100%;
-    left: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-  }
-  /* add delay at the end of animation so you dont start while another div is going */
-  @keyframes marquee {
-    0% { left: 100%; }
-    100% { left: -200%; }
-  }
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    margin: auto;
+    fill: white;
+}
 
 
-
-
-
-
-/* DEBUG *//*
+/* DEBUG */
 
 .X, .Y {
     display: block;
