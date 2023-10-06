@@ -82,6 +82,24 @@
 body {
     background-color: rgba(0, 0, 0, 1);
 }
+.lang {
+    position: absolute;
+    width: 6rem;
+    left: calc(50vw - 3rem);
+    top: calc(50vh + 3.4rem);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    hyphenate-character: ' -';
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
 .description, .quote, .content {
     z-index: 1 !important;
 }
@@ -110,11 +128,11 @@ body {
 }
 .imgS, .imgL {
     display: block;
-    -webkit-filter: contrast(95%);
-    -moz-filter: contrast(95%);
-    -o-filter: contrast(95%);
-    -ms-filter: contrast(95%);
-    filter: contrast(95%);
+    -webkit-filter: contrast(90%);
+    -moz-filter: contrast(90%);
+    -o-filter: contrast(90%);
+    -ms-filter: contrast(90%);
+    filter: contrast(90%);
 }
 
 
@@ -213,7 +231,7 @@ body {
 /* desktop */
 @media screen and (min-width: 88rem) {
     body {
-        margin: 8rem 8rem 16rem 8rem;
+        margin: 8rem 8rem 8rem 8rem;
     }
     .container {
         max-width: 72rem;
@@ -335,6 +353,60 @@ a:hover {
     opacity: .3;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+.lang {
+    margin-top: 0rem;
+    transform: translateY(-4rem);
+    right: 4rem !important;
+    float: right;
+    background-color: transparent;
+    color: rgba(255, 255, 255, .1);
+    z-index: 1;
+}
+.marquee {
+    height: 35px;
+    width: 100%;
+  
+    position: relative;
+    
+    font-size: 300rem;
+    -webkit-text-stroke: 2px rgba(235, 235, 235, 1);
+    font-weight: 600;
+    transform: translateY(-500px);
+  }
+  
+  
+  /* would need to be adjusted depending on time */
+  .marquee .marqueeone{
+    animation: marquee 7s linear infinite;
+  }
+  
+  .marquee .marqueetwo{
+    animation: marquee 7s linear 5s infinite;
+  }
+  
+  /* even out the elements */
+  .marquee div {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* add delay at the end of animation so you dont start while another div is going */
+  @keyframes marquee {
+    0% { left: 100%; }
+    100% { left: -200%; }
+  }
+
+
 
 
 
