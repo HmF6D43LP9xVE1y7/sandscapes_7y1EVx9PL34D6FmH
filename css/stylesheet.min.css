@@ -128,11 +128,11 @@ body {
 }
 .imgS, .imgL {
     display: block;
-    -webkit-filter: contrast(90%);
-    -moz-filter: contrast(90%);
-    -o-filter: contrast(90%);
-    -ms-filter: contrast(90%);
-    filter: contrast(90%);
+    -webkit-filter: contrast(95%);
+    -moz-filter: contrast(95%);
+    -o-filter: contrast(95%);
+    -ms-filter: contrast(95%);
+    filter: contrast(95%);
 }
 
 
@@ -369,17 +369,13 @@ a:hover {
     color: rgba(255, 255, 255, .1);
     z-index: 1;
 }
-#video {
-    overflow: hidden;
-    transform: scale(78%); /* WIP */
-}
+
 #video img {
-    -webkit-filter: saturate(9%) blur(.35rem);
-    -moz-filter: saturate(0%) blur(.35rem);
-    -o-filter: saturate(0%) blur(.35rem);
-    -ms-filter: saturate(0%) blur(.35rem);
-    filter: saturate(0%) blur(.35rem);
-    transform: scale(120%); /* WIP */
+    -webkit-filter: saturate(9%) contrast(95%);
+    -moz-filter: saturate(0%) contrast(95%);
+    -o-filter: saturate(0%) contrast(95%);
+    -ms-filter: saturate(0%) contrast(95%);
+    filter: saturate(0%) contrast(95%);
 }
 #video svg {
     position: absolute;
