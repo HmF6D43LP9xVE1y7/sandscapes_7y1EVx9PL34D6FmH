@@ -369,13 +369,17 @@ a:hover {
     color: rgba(255, 255, 255, .1);
     z-index: 1;
 }
-
+#video {
+    overflow: hidden;
+    transform: scale(78%); /* WIP */
+}
 #video img {
-    -webkit-filter: saturate(9%);
-    -moz-filter: saturate(0%);
-    -o-filter: saturate(0%);
-    -ms-filter: saturate(0%);
-    filter: saturate(0%);
+    -webkit-filter: saturate(9%) blur(.35rem);
+    -moz-filter: saturate(0%) blur(.35rem);
+    -o-filter: saturate(0%) blur(.35rem);
+    -ms-filter: saturate(0%) blur(.35rem);
+    filter: saturate(0%) blur(.35rem);
+    transform: scale(120%); /* WIP */
 }
 #video svg {
     position: absolute;
