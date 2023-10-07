@@ -58,9 +58,9 @@
     font-family: "din-2014";
 }
 body {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: black;
     /*
-    background: black url("../assets/tim_ott_2023_06_ueli_hirzel_sandscapes_018.jpg") no-repeat fixed center right;
+    background: black url("../assets/tim_ott_2022_07_ueli_hirzel_sandscapes_015.jpg") no-repeat fixed center right;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -81,4 +81,17 @@ body {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+}
+a {
+    -webkit-transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    -ms-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    pointer-events: all;
+    color: white;
+}
+a:hover {
+    opacity: .3;
+    cursor: pointer;
 }

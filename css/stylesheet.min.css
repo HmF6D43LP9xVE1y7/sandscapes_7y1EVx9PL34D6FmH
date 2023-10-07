@@ -81,6 +81,19 @@
 body {
     background-color: rgba(0, 0, 0, 1);
 }
+.container {
+    animation: fadeIn 1s ease 0s 1 forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .description, .quote, .content {
     z-index: 1 !important;
 }
@@ -170,17 +183,10 @@ body {
         max-width: 100%;
         margin-top: 2rem;
     }
-    .trtrDeS {
-        transform: translateX(-.125rem);
-    }
-    .trtrDeL {
-        transform: translateX(-.25rem);
-    }
 
 
 
     .XX {
-
         top: 4rem !important;
     }
 
@@ -228,12 +234,6 @@ body {
     .imgL {
         max-width: 48rem;
         margin: 4rem auto auto auto;
-    }
-    .trtrDeS {
-        transform: translateX(-.125rem);
-    }
-    .trtrDeL {
-        transform: translateX(-.25rem);
     }
 }
 /* desktop */
@@ -288,12 +288,6 @@ body {
         max-width: 72rem;
         margin: 4rem auto auto auto;
     }
-    .trtrDeS {
-        transform: translateX(-.25rem);
-    }
-    .trtrDeL {
-        transform: translateX(-.5rem);
-    }
 }
 
 
@@ -301,45 +295,6 @@ body {
 
 
 
-.fadeIn {
-    animation: fadeIn 1s ease 0s 1 forwards;
-    opacity: 0;
-}
-.delayA { animation-delay: .1s; }
-.delayB { animation-delay: .2s; }
-.delayC { animation-delay: .3s; }
-.delayD { animation-delay: .4s; }
-.delayE { animation-delay: .5s; }
-.delayF { animation-delay: .6s; }
-.delayG { animation-delay: .7s; }
-.delayH { animation-delay: .8s; }
-.delayI { animation-delay: .9s; }
-.delayJ { animation-delay: 1s; }
-.delayK { animation-delay: 1.1s; }
-.delayL { animation-delay: 1.2s; }
-.delayM { animation-delay: 1.3s; }
-.delayN { animation-delay: 1.4s; }
-.delayO { animation-delay: 1.5s; }
-.delayP { animation-delay: 1.6s; }
-.delayQ { animation-delay: 1.7s; }
-.delayR { animation-delay: 1.8s; }
-.delayS { animation-delay: 1.9s; }
-.delayT { animation-delay: 2s; }
-.delayU { animation-delay: 2.1s; }
-.delayV { animation-delay: 2.2s; }
-.delayW { animation-delay: 2.3s; }
-.delayX { animation-delay: 2.4s; }
-.delayY { animation-delay: 2.5s; }
-.delayZ { animation-delay: 2.6s; }
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(2rem);
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 
 
@@ -405,12 +360,12 @@ a:hover {
     left: calc(50vw - .5px);
 }
 
-@media screen and (max-width: 42rem) {
+@media screen and (max-width: 60rem) {
     * {
         background-color: rgba(255, 0, 0, .2);
     }
 }
-@media screen and (min-width: 42rem) and (max-width : 88rem) {
+@media screen and (min-width: 60rem) and (max-width : 88rem) {
     * {
         background-color: rgba(0, 255, 0, .2);
     }
