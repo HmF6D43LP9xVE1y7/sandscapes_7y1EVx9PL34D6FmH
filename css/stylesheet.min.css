@@ -134,7 +134,20 @@ body {
     -ms-filter: contrast(95%);
     filter: contrast(95%);
 }
-
+.underline {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: white;
+    -moz-text-decoration-style: solid;
+    -moz-text-decoration-color: white;
+}
+.lang {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
 
 
 
@@ -153,7 +166,7 @@ body {
     .description, .quote, .content {
         margin: 2rem 0rem 0rem 0rem;
     }
-    .quote, .content {
+    .quote, .content, .lang {
         font-size: 1rem;
         line-height: 1.2rem;
     }
@@ -185,7 +198,6 @@ body {
     }
 
 
-
     .XX {
         top: 4rem !important;
     }
@@ -215,9 +227,11 @@ body {
         line-height: 1.8rem; /* 2.4rem */
         margin-left: 12rem;
     }
-    .content {
+    .content, .lang {
         font-size: 1.5rem;
         line-height: 1.8rem;
+    }
+    .content {
         max-width: 36rem;
         margin-left: 6rem;
     }
@@ -259,9 +273,11 @@ body {
         line-height: 3.2rem; /* 2.4rem */
         margin-left: 16rem;
     }
-    .content {
+    .content, .lang {
         font-size: 1.5rem;
         line-height: 1.8rem;
+    }
+    .content {
         max-width: 56rem;
         margin-left: 8rem;
     }
@@ -333,7 +349,7 @@ a:hover {
 
 
 
-/* DEBUG */
+/* DEBUG *//*
 
 .X, .XX, .Y {
     display: block;
@@ -376,24 +392,6 @@ a:hover {
     }
 }
 
-
-
-
-.lang {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    font-weight: 300;
-    font-style: normal;
-    hyphenate-character: ' -';
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-}
 
 /*
 
