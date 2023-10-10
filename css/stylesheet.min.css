@@ -121,7 +121,7 @@ body {
 .content {
     font-weight: 300;
     text-align: justify !important;
-    hyphenate-character: ' -';
+    hyphenate-character: '-';
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
