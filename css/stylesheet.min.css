@@ -99,12 +99,12 @@ body {
 }
 .description, .quote {
     font-weight: 700;
-    text-align: left; /* justify */
+    text-align: left;
 }
 .quote, .content, a {
     color: white;
 }
-.description /*, .content */ {
+.description, .content  {
     font-style: normal;
     hyphenate-character: '-';
     -webkit-hyphens: auto;
@@ -120,15 +120,18 @@ body {
 }
 .content {
     font-weight: 300;
-    text-align: left !important;
+    text-align: left !important; /* justify */
 }
 .lang {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: max-content;
     color: white;
+}
+#langDescription {
+    margin: 0;
 }
 .imgS, .imgL {
     display: block;
@@ -212,6 +215,12 @@ a:hover {
         width: 2.8rem !important;
         height: 2.8rem !important;
     }
+    .lang {
+        transform: translate(-50%, -2.8rem);
+    }
+    #langContent {
+        margin: 1.2rem 0 0 0;
+    }
 }
 /* TABLET */
 @media screen and (min-width: 60rem) and (max-width : 88rem) {
@@ -261,6 +270,12 @@ a:hover {
     #video svg {
         width: 4rem !important;
         height: 4rem !important;
+    }
+    .lang {
+        transform: translate(-50%, -4.4rem);
+    }
+    #langContent {
+        margin: 1.8rem 0 0 0;
     }
 }
 /* DESKTOP */
@@ -321,9 +336,13 @@ a:hover {
         width: 4rem !important;
         height: 4rem !important;
     }
+    .lang {
+        transform: translate(-50%, -5.6rem);
+    }
+    #langContent {
+        margin: 1.8rem 0 0 0;
+    }
 }
-
-
 
 
 /* DEBUG *//*
@@ -365,6 +384,6 @@ a:hover {
 }
 @media screen and (min-width: 88rem) {
     * {
-        background-color: rgba(255, 255, 0, .2);
+        background-color: rgba(100, 100, 0, .5);
     }
 }
