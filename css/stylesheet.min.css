@@ -50,12 +50,6 @@
     font-weight: 700;
     font-style: italic;
 }
-
-/* check from here on onwards */
-/* add css details from french developer in connection to Timo */
-
-/* browser cross compatibility */
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -110,7 +104,7 @@ body {
 }
 .content {
     font-weight: 300;
-    text-align: left !important; /* justify */
+    text-align: left !important;
 }
 a {
     -webkit-transition: opacity .3s ease;
@@ -176,7 +170,6 @@ a:hover {
         transform: translateY(0);
     }
 }
-/* MOBILE */
 @media screen and (max-width: 60rem) {
     body {
         margin: 4rem 2rem 4rem 2rem;
@@ -210,12 +203,6 @@ a:hover {
     .indent {
         text-indent: 4rem;
     }
-    /*
-    .imgS {
-        max-width: calc(100% - 8rem);
-        margin: 2rem auto auto auto;
-    }
-    */
     .imgS, .imgL {
         max-width: 100%;
         margin-top: 2rem;
@@ -227,11 +214,10 @@ a:hover {
         margin: 1.2rem 0 0 0;
     }
     #video svg {
-        width: 2.8rem !important;
-        height: 2.8rem !important;
+        width: 2rem !important;
+        height: 2rem !important;
     }
 }
-/* TABLET */
 @media screen and (min-width: 60rem) and (max-width : 80rem) {
     body {
         margin: 8rem 6rem 8rem 6rem;
@@ -283,11 +269,10 @@ a:hover {
         margin: 1.8rem 0 0 0;
     }
     #video svg {
-        width: 4rem !important;
-        height: 4rem !important;
+        width: 3rem !important;
+        height: 3rem !important;
     }
 }
-/* DESKTOP */
 @media screen and (min-width: 80rem) {
     body {
         margin: 8rem 8rem 8rem 8rem;
@@ -343,47 +328,6 @@ a:hover {
         height: 4rem !important;
     }
 }
-
-
-/* DEBUG */
-
-.X, .XX, .Y {
-    display: block;
-    position: fixed;
-    background-color: rgba(255, 0, 0, 1);
-    z-index: 500;
-}
-.X {
-    height: 1px;
-    width: 100vw;
-    left: 0px;
-    top: calc(50vh - .5px);
-}
-.XX {
-    height: 1px;
-    width: 100vw;
-    left: 0px;
-    top: 8rem;
-}
-.Y {
-    width: 1px;
-    height: 100vh;
-    top: 0px;
-    left: calc(50vw - .5px);
-}
-
-@media screen and (max-width: 60rem) {
-    * {
-        background-color: rgba(255, 0, 0, .2);
-    }
-}
-@media screen and (min-width: 60rem) and (max-width : 80rem) {
-    * {
-        background-color: rgba(0, 255, 0, .2);
-    }
-}
-@media screen and (min-width: 80rem) {
-    * {
-        background-color: rgba(100, 100, 0, .5);
-    }
+* {
+    background-color: rgba(255, 0, 0, .2);
 }
