@@ -84,6 +84,82 @@ body {
 .container {
     animation: fadeOpacity 1s ease 0s 1 forwards, fadeTransform 1s ease 0s 1 forwards;
 }
+.description, .quote, .content {
+    z-index: 1 !important;
+}
+.description, .quote {
+    font-weight: 700;
+    text-align: left;
+}
+.description, .content  {
+    font-style: normal;
+    hyphenate-character: '-';
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.description {
+    position: sticky !important;
+    color: transparent;
+}
+.quote, .content, a {
+    color: white;
+}
+.quote {
+    font-style: italic;
+}
+.content {
+    font-weight: 300;
+    text-align: left !important; /* justify */
+}
+a {
+    -webkit-transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    -ms-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    pointer-events: all;
+}
+a:hover {
+    opacity: .3;
+    cursor: pointer;
+}
+.underline {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: white;
+    -moz-text-decoration-style: solid;
+    -moz-text-decoration-color: white;
+}
+.imgS, .imgL {
+    display: block;
+    -webkit-filter: contrast(95%);
+    -moz-filter: contrast(95%);
+    -o-filter: contrast(95%);
+    -ms-filter: contrast(95%);
+    filter: contrast(95%);
+}
+.lang {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    color: white;
+    animation: fadeOpacity 1s ease 0s 1 forwards
+}
+#langDescription {
+    margin: 0;
+}
+#video svg {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    fill: white;
+}
 @keyframes fadeOpacity {
     from {
         opacity: 0;
@@ -100,82 +176,6 @@ body {
         transform: translateY(0);
     }
 }
-.description, .quote, .content {
-    z-index: 1 !important;
-}
-.description, .quote {
-    font-weight: 700;
-    text-align: left;
-}
-.quote, .content, a {
-    color: white;
-}
-.description, .content  {
-    font-style: normal;
-    hyphenate-character: '-';
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-}
-.description {
-    position: sticky !important;
-    color: transparent;
-}
-.quote {
-    font-style: italic;
-}
-.content {
-    font-weight: 300;
-    text-align: left !important; /* justify */
-}
-.lang {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: max-content;
-    color: white;
-    animation: fadeOpacity 1s ease 0s 1 forwards
-}
-#langDescription {
-    margin: 0;
-}
-.imgS, .imgL {
-    display: block;
-    -webkit-filter: contrast(95%);
-    -moz-filter: contrast(95%);
-    -o-filter: contrast(95%);
-    -ms-filter: contrast(95%);
-    filter: contrast(95%);
-}
-.underline {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: white;
-    -moz-text-decoration-style: solid;
-    -moz-text-decoration-color: white;
-}
-a {
-    -webkit-transition: opacity .3s ease;
-    -moz-transition: opacity .3s ease;
-    -ms-transition: opacity .3s ease;
-    -o-transition: opacity .3s ease;
-    transition: opacity .3s ease;
-    pointer-events: all;
-}
-a:hover {
-    opacity: .3;
-    cursor: pointer;
-}
-#video svg {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    fill: white;
-}
 /* MOBILE */
 @media screen and (max-width: 60rem) {
     body {
@@ -188,15 +188,15 @@ a:hover {
     .description, .quote, .content {
         margin: 2rem 0rem 0rem 0rem;
     }
-    .quote, .content, .lang {
-        font-size: 1rem;
-        line-height: 1.2rem;
-    }
     .description {
         font-size: 4rem;
         line-height: 2.8rem;
         -webkit-text-stroke: 1.5px rgba(235, 235, 235, 1);
         top: 4rem;
+    }
+    .quote, .content, .lang {
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
     .quote {
         margin-left: 4rem;
@@ -210,17 +210,15 @@ a:hover {
     .indent {
         text-indent: 4rem;
     }
+    /*
     .imgS {
-        max-width: calc(100% - 4rem);
+        max-width: calc(100% - 8rem);
         margin: 2rem auto auto auto;
     }
-    .imgL {
+    */
+    .imgS, .imgL {
         max-width: 100%;
         margin-top: 2rem;
-    }
-    #video svg {
-        width: 2.8rem !important;
-        height: 2.8rem !important;
     }
     .lang {
         transform: translate(-50%, -2.8rem);
@@ -228,9 +226,13 @@ a:hover {
     #langContent {
         margin: 1.2rem 0 0 0;
     }
+    #video svg {
+        width: 2.8rem !important;
+        height: 2.8rem !important;
+    }
 }
 /* TABLET */
-@media screen and (min-width: 60rem) and (max-width : 88rem) {
+@media screen and (min-width: 60rem) and (max-width : 80rem) {
     body {
         margin: 8rem 6rem 8rem 6rem;
     }
@@ -274,24 +276,24 @@ a:hover {
         max-width: 48rem;
         margin: 4rem auto auto auto;
     }
-    #video svg {
-        width: 4rem !important;
-        height: 4rem !important;
-    }
     .lang {
         transform: translate(-50%, -4.4rem);
     }
     #langContent {
         margin: 1.8rem 0 0 0;
     }
+    #video svg {
+        width: 4rem !important;
+        height: 4rem !important;
+    }
 }
 /* DESKTOP */
-@media screen and (min-width: 88rem) {
+@media screen and (min-width: 80rem) {
     body {
         margin: 8rem 8rem 8rem 8rem;
     }
     .container {
-        max-width: 72rem;
+        max-width: 64rem;
         margin: auto;
     }
     .description, .quote, .content {
@@ -313,7 +315,7 @@ a:hover {
         line-height: 1.8rem;
     }
     .content {
-        max-width: 56rem;
+        max-width: 48rem;
         margin-left: 8rem;
     }
     .spacing {
@@ -323,16 +325,12 @@ a:hover {
         text-indent: 8rem;
     }
     .imgS {
-        max-width: 56rem;
+        max-width: 48rem;
         margin: 4rem auto auto auto;
     }
     .imgL {
-        max-width: 72rem;
+        max-width: 64rem;
         margin: 4rem auto auto auto;
-    }
-    #video svg {
-        width: 4rem !important;
-        height: 4rem !important;
     }
     .lang {
         transform: translate(-50%, -5.6rem);
@@ -340,10 +338,14 @@ a:hover {
     #langContent {
         margin: 1.8rem 0 0 0;
     }
+    #video svg {
+        width: 4rem !important;
+        height: 4rem !important;
+    }
 }
 
 
-/* DEBUG *//*
+/* DEBUG */
 
 .X, .XX, .Y {
     display: block;
@@ -375,12 +377,12 @@ a:hover {
         background-color: rgba(255, 0, 0, .2);
     }
 }
-@media screen and (min-width: 60rem) and (max-width : 88rem) {
+@media screen and (min-width: 60rem) and (max-width : 80rem) {
     * {
         background-color: rgba(0, 255, 0, .2);
     }
 }
-@media screen and (min-width: 88rem) {
+@media screen and (min-width: 80rem) {
     * {
         background-color: rgba(100, 100, 0, .5);
     }
