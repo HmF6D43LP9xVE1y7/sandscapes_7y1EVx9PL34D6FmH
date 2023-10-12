@@ -322,15 +322,6 @@ a:hover {
     .indent {
         text-indent: 8rem;
     }
-    .line {
-        display: block;
-        margin: 4rem auto auto auto;
-        background-color: rgba(255, 255, 255, 1);
-        width: 2px;
-        height: 8rem;
-        top: 0px;
-        left: calc(50vw - 1px);
-    }
     .imgS {
         max-width: 56rem;
         margin: 4rem auto auto auto;
