@@ -85,7 +85,7 @@ body {
     font-weight: 700;
     text-align: left;
 }
-.description, .content  {
+.description /*, .content */  {
     font-style: normal;
     hyphenate-character: '-';
     -webkit-hyphens: auto;
@@ -106,7 +106,7 @@ body {
     font-weight: 300;
     text-align: left !important;
 }
-a {
+a, svg {
     -webkit-transition: opacity .3s ease;
     -moz-transition: opacity .3s ease;
     -ms-transition: opacity .3s ease;
@@ -114,7 +114,7 @@ a {
     transition: opacity .3s ease;
     pointer-events: all;
 }
-a:hover {
+a:hover, svg:hover {
     opacity: .3;
     cursor: pointer;
 }
@@ -125,7 +125,19 @@ a:hover {
     -moz-text-decoration-style: solid;
     -moz-text-decoration-color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
 .imgS, .imgL {
+    background-color: red;
     display: block;
     -webkit-filter: contrast(95%);
     -moz-filter: contrast(95%);
@@ -133,6 +145,32 @@ a:hover {
     -ms-filter: contrast(95%);
     filter: contrast(95%);
 }
+.centerleft, .centerright {
+    position: fixed;
+    height: 2rem;
+    z-index: 1;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    fill: rgba(235, 235, 235, 1);
+    stroke-width: 1px;
+}
+.centerleft {
+    left: 2rem;
+}
+.centerright {
+    right: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
 .lang {
     position: absolute;
     top: 50%;
