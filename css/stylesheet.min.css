@@ -145,7 +145,7 @@ a:hover, svg:hover {
     align-items: center;
 }
 .centerleft, .centerright {
-    position: fixed;
+    position: absolute;
     height: 2rem;
     z-index: 1;
     
@@ -160,10 +160,10 @@ a:hover, svg:hover {
     stroke-width: 1px;
 }
 .centerleft {
-    left: 2rem;
+    left: 1rem;
 }
 .centerright {
-    right: 2rem;
+    right: 1rem;
 }
 * {
     background-color: rgba(235, 0, 0, .2);
