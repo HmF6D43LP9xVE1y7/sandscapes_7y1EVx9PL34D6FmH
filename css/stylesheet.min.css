@@ -133,25 +133,29 @@ a:hover, svg:hover {
 
 
 
-
-
+/* FIX SAFARI ALIGNMENT */
 
 .imgS, .imgL {
-    background-color: red;
     display: block;
     -webkit-filter: contrast(95%);
     -moz-filter: contrast(95%);
-    -o-filter: contrast(95%);
     -ms-filter: contrast(95%);
+    -o-filter: contrast(95%);
     filter: contrast(95%);
+    align-items: center;
 }
 .centerleft, .centerright {
     position: fixed;
     height: 2rem;
     z-index: 1;
-    top: 50%;
+    
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
+
+    top: 50%;
     fill: rgba(235, 235, 235, 1);
     stroke-width: 1px;
 }
@@ -160,6 +164,9 @@ a:hover, svg:hover {
 }
 .centerright {
     right: 2rem;
+}
+* {
+    background-color: rgba(235, 0, 0, .2);
 }
 
 
