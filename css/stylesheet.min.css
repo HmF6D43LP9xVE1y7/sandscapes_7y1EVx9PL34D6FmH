@@ -149,11 +149,11 @@ a:hover, svg:hover {
     height: 2rem;
     z-index: 1;
     
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
 
     top: 50%;
     fill: rgba(235, 235, 235, 1);
