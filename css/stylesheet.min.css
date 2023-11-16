@@ -145,10 +145,12 @@ a:hover, svg:hover {
     align-items: center;
 }
 .centerleft, .centerright {
-    position: absolute;
+    position: fixed;
     height: 2rem;
     z-index: 1;
     
+    -webkit-transform: translateZ(0); /* fix? */
+
     -webkit-transform: translate(0, -50%);
     -moz-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
