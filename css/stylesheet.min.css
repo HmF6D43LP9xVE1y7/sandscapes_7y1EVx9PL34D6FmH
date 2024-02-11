@@ -160,6 +160,10 @@ svg {
     bottom: 0;
     left: 0;
 }
+#video svg:hover {
+    opacity: 1;
+    cursor: pointer;
+}
 @keyframes fadeOpacity {
     from {
         opacity: 0;
