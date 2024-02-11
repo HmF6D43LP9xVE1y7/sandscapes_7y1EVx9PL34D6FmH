@@ -144,7 +144,7 @@ a:hover, svg:hover {
     align-items: center;
 }
 svg {
-    position: absolute;
+    position: fixed;
     margin: auto;
     top: 0;
     bottom: 0;
