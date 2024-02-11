@@ -206,7 +206,7 @@ svg {
     .indent {
         text-indent: calc(calc(var(--viewWidth) / var(--columns)) * 1);
     }
-    .imgS, .imgL {
+    .imgS, .imgL, .gallery, #video {
         width: calc(calc(var(--viewWidth) / var(--columns)) * 7);
         margin: calc(calc(var(--viewWidth) / var(--columns)) * 1) auto 0 auto;
     }
@@ -261,7 +261,7 @@ svg {
         width: calc(calc(var(--viewWidth) / var(--columns)) * 5);
         margin: calc(calc(var(--viewWidth) / var(--columns)) * .4) auto 0 auto;
     }
-    .imgL {
+    .imgL, .gallery, #video {
         width: calc(calc(var(--viewWidth) / var(--columns)) * 7);
         margin: calc(calc(var(--viewWidth) / var(--columns)) * .4) auto 0 auto;
     }
@@ -332,7 +332,7 @@ svg {
         width: calc(calc(var(--viewWidth) / var(--columns)) * 3.5);
         margin: calc(calc(var(--viewWidth) / var(--columns)) * .4) auto 0 auto;
     }
-    .imgL {
+    .imgL, .gallery, #video {
         width: calc(calc(var(--viewWidth) / var(--columns)) * 4.5);
         margin: calc(calc(var(--viewWidth) / var(--columns)) * .4) auto 0 auto;
     }
