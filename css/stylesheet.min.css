@@ -96,7 +96,7 @@ a:hover, svg:hover {
     opacity: .3;
     cursor: pointer;
 }
-.underline {
+a, .underline {
     -webkit-text-decoration: underline;
     -moz-text-decoration: underline;
     -ms-text-decoration: underline;
@@ -360,7 +360,7 @@ svg {
     width: max-content;
 }
 
-/* DEBUG */
+/* DEBUG *//*
 
 * {
     background-color: rgba(255, 0, 0, .2);
