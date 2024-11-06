@@ -1,0 +1,214 @@
+.paragraph_style {
+    color: rgb(88, 77, 77);
+    font-family: 'GillSans', 'Gill Sans', 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+.style_1.vertical-align-middle-innerbox {
+}
+.paragraph_style_1 {
+	color: rgb(66, 66, 66);
+	font-family: 'TrebuchetMS-Bold', 'Trebuchet MS', sans-serif;
+	font-size: 10pt;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	letter-spacing: 0;
+	line-height: 12px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	opacity: 1.00;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	text-align: center;
+	text-decoration: none;
+	text-indent: 0px;
+	text-transform: uppercase;
+}
+.paragraph_style_2 {
+	color: rgb(88, 77, 77);
+	font-family: 'GillSans', 'Gill Sans', 'Trebuchet MS', sans-serif;
+	font-size: 18px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 21px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	opacity: 1.00;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	text-align: center;
+	text-decoration: none;
+	text-indent: 0px;
+	text-transform: uppercase;
+	padding-right: 0px;
+}
+.style_2 {
+    padding: 0px;
+}
+
+.paragraph_style_5 {
+	color: #A5A5A5;
+	font-family: 'GillSans', 'Gill Sans', 'Trebuchet MS', sans-serif;
+	font-size: 9pt;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 11pt;
+	opacity: 1.00;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	text-align: justify;
+	text-decoration: none;
+	text-indent: 0px;
+	text-transform: none;
+	white-space: normal;
+	margin: 0px;
+	padding-right: 60px;
+	padding-left: 50px;
+	width: 300px;
+}
+
+.Body {
+    color: rgb(88, 77, 77);
+    font-family: 'ArialMT', 'Arial', sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    
+    opacity: 1.00;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    text-transform: none;
+}
+
+.graphic_textbox_layout_style_default {
+    padding: 4px;
+}
+
+a {
+    color: rgb(88, 77, 77);
+    text-decoration: underline;
+}
+a:visited {
+    color: rgb(121, 121, 121);
+    text-decoration: underline;
+}
+a.class1 {
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+}
+a.class1:visited {
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+}
+a.class1:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a.class2 {
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+}
+a.class2:visited {
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+}
+a.class2:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a.class3 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a.class3:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a.class3:hover {
+    color: rgb(255, 255, 255);
+}
+a.class4 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a.class4:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a.class4:hover {
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+.bumper {
+    font-size: 1px;
+    line-height: 1px;
+}
+.innerbox {
+    font-size: 1px;
+    line-height: 1px;
+}
+body { 
+    -webkit-text-size-adjust: none;
+}
+div { 
+    overflow: visible; 
+}
+img { 
+    border: none; 
+}
+.InlineBlock { 
+    display: inline; 
+}
+.InlineBlock { 
+    display: inline-block; 
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-bottom:0.3em;
+}
+.inline-block.shape-with-text {
+    vertical-align: bottom;
+}
+
+div.paragraph {
+    position: relative;
+}

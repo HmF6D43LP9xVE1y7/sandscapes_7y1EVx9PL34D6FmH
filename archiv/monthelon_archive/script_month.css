@@ -1,0 +1,93 @@
+/* CSS Document */
+
+html, body, textarea
+ {
+ height:100%;
+ width: 100%;
+ margin:0px;
+ padding:0px;
+ text-decoration: none;
+ font-family: "Verdana", "Arial", sans-serif ;
+ font-size: 9px;
+ color: #000000;
+ 
+scrollbar-base-color:#8F8F8F;
+ scrollbar-3dlight-color:#8F8F8F;
+ scrollbar-arrow-color:#8F8F8F;
+ scrollbar-darkshadow-color:#ffffff;
+ scrollbar-face-color:#ffffff;
+ scrollbar-highlight-color:#ffffff;
+ scrollbar-shadow-color:#8F8F8F;
+ scrollbar-track-color:#ffffff;
+ }
+ 
+.MainContainer {
+	width: 766px;
+	height: 90%;
+	margin-top: 0px;
+	background-color: #ffffff;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	position: absolute;
+	margin-right: 0px;
+	margin-left: 1px;
+}
+
+
+.small {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #666666;
+	text-indent: 1px;
+}
+.b {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	letter-spacing: 1px;
+	color: #666666;
+	padding-left: 260px;
+	
+}
+.font {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	letter-spacing: 1px;
+	line-height: 14px;
+	color: #666666;
+	width: 240px;
+	padding-right: 15px;
+	text-indent: 0.5px;
+}
+.text {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	letter-spacing: 1px;
+	line-height: 14px;
+	color: #666666;
+	width: 340px;
+	padding-right: 15px;
+	text-indent: 0.5px;
+}
+.head {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666666;
+	letter-spacing: 1px;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+#release-nav { margin: 5px 0;}
+#release-nav td { padding: 3px 0; border-top: 1 px solid #a0a0a0; border-bottom; 1 px solid #a0a0a0; text-alig: center; white-space:nowrap; letter spacing: -.5px;}

@@ -1,0 +1,260 @@
+input, textarea, select {
+background-color: #FFFFFF;
+}
+
+html, body, textarea
+ {
+ height:100%;
+ width: 100%;
+ margin:0px;
+ padding:0px;
+ text-decoration: none;
+ font-family: "Verdana", "Arial", sans-serif ;
+ font-size: 11px;
+ color: #000000;
+
+ scrollbar-base-color:#8F8F8F;
+ scrollbar-3dlight-color:#8F8F8F;
+ scrollbar-arrow-color:#8F8F8F;
+ scrollbar-darkshadow-color:#ffffff;
+ scrollbar-face-color:#ffffff;
+ scrollbar-highlight-color:#ffffff;
+ scrollbar-shadow-color:#8F8F8F;
+ scrollbar-track-color:#ffffff;
+ }
+
+a{
+ text-decoration: none;
+ color: #D61C24;
+ }
+a:hover{text-decoration: none; color: #D61C24; }
+
+.black{
+ letter-spacing: 1px;
+ text-decoration: none;
+ color: #000000;
+}
+
+.grey{
+letter-spacing: 1px;
+text-decoration: none;
+color: #000000;
+}
+
+
+.menue {
+float: left;
+height: 36px;
+letter-spacing: 1px;
+font-size: 11px;
+text-decoration: none;
+color: #4D4D4D;
+}
+.menue:hover{text-decoration: none; color: #000000; background:url(pics/marker.gif) no-repeat scroll center;}
+
+
+.submenueBox {
+   margin-top: 66px;
+   margin-left:40px;
+   line-height: 16px;
+   border: solid 0px #ff8888;
+}
+
+a.submenue {
+   letter-spacing: 1px;
+   text-decoration: none;
+   color: #4D4D4D;
+   height:20px;
+   border: solid 0px #888888;
+   white-space: nowrap;
+}
+
+
+ 
+/* content aufteilung */
+
+.content{
+ position: absolute;
+ left: 0px;
+ top: 65px;
+ width: 99%;
+ border: solid 0px #22ff00;
+}
+
+.contentPrintBox{
+ position: absolute;
+ left: 0px;
+ margin-left: 20px;
+ top: 360px;
+ width: 27%;
+ height: 20px;
+ text-align: right;
+ border: solid 0px #999999;
+}
+
+.contentTopBox{
+ position:relative;
+ height: 450px;
+ margin-left: 30%;
+ border-left: solid 1px #8F8F8F;
+ 
+}
+
+.contentTopText{
+ position: absolute;
+ bottom: 20px;
+ margin-left: 20px;
+ width: 430px;
+ text-align: left;
+ line-height: 18px;
+ letter-spacing: 1px;
+ border: solid 0px #888888;
+}
+
+.contentTopPic{
+	position: absolute;
+	bottom: 0px;
+	margin-top: 0px;
+	text-align: left;
+	border-top: 0px solid #888888;
+	border-right: 1px solid #A2A2A2;
+	background-color: #ffffff;
+}
+
+
+.contentBalken{
+ width: 97%;
+ min-height: 80px;
+ _height: 80px;
+ background-color: #fff;
+ border-top: solid 1px #333300;
+ border-bottom: solid 1px #333300;
+ border-right: solid 1px #333300;
+}
+
+.b{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	letter-spacing: 1px;
+	height: auto;
+	width: 602px;
+	padding: 0px;
+	clear: both;
+	left: 0px;
+	text-indent: 10px;
+	top: 3px;
+	border: 1px solid #999999;
+	background-color: #99CC99;
+}
+
+.font{
+	font-family: Verdana, Arial;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: 1px;
+	color:#697070;
+	text-align: justify;
+	width: 560px;
+	padding: 5px;
+	margin-left: 10px;
+	}
+
+.contentBottomBox{
+ margin-left: 30%;
+ border-left: solid 1px #8F8F8F;
+ font-family: "Verdana", "Arial", sans-serif ;
+ font-size: 11px;
+ color: #000000;
+}
+
+.contentBottomText{
+ margin-left: 20px;
+ width: 500px;
+ text-align: left;
+ line-height: 18px;
+ letter-spacing: 1px;
+ border: solid 0px #888888;
+}
+
+/* ende contentaufteilung */
+
+.title {
+font-family: "Times New Roman", "Garamond", serif ;
+font-size: 40px;
+letter-spacing: 5px;
+line-height: 45px;
+color: #99CC99;
+text-transform: lowercase;
+}
+
+
+/* Bilderbox */
+
+   .bilderBox {
+   text-align: left;
+   width: 400px;
+   line-height: 70%;
+   margin-bottom: 0px;
+   }
+
+   .bilderUnterschriftBalken {
+   float: left;
+   padding-top: 6px;
+   height: 100%;
+   }
+
+   .bildUnterschriftText {
+	float: left;
+	font-size: 10px;
+	color: #808080;
+	letter-spacing: 1px;
+	padding-right: 5px;
+   }
+
+
+.mehr {
+font-size: 10px;
+text-decoration: none;
+color:  #99CC99;
+font-weight: bold;
+}
+.mehr:hover{text-decoration: none; color: #D61C24;}
+
+.grau {
+ font-size: 9px;
+ text-decoration: none;
+ color: #808080;
+ letter-spacing: 1px;
+ font-weight: normal;
+}
+
+
+
+.times {
+ font-family: "Times New Roman", "Garamond", serif ;
+}
+
+.titlebox {
+
+font-size: 11px;
+font-weight: bold;
+text-decoration: none;
+letter-spacing: 1px;
+color: #000000;
+line-height: 18px;
+border: solid 0px #999999;
+}
+
+.title:hover {
+color: #D61C24;
+}
+
+.abstand_TitelzuText{
+ height:20px;
+}
+
+.abstand_10
+{
+ height:10px;
+}

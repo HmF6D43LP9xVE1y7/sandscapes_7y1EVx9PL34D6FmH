@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>Compa&ntilde;ia de Paso</title>
+   <meta name="keywords" inhalt="chile, CIRQUE contemporain, Zirkus, Zirkuskunst, Circus, Arts du Cirque,Theater, Trapeze, Ueli Hirzel, susann A .immekeppel, Monthelon, Nouveau Cirque">
+   <meta name="description" inhalt="A delicate structure consisting of four pylons is the support for a metal construction. At the height of eight metres six trapezes have been attached.">
+
+<script type="text/javascript">
+// (C) 2000 www.CodeLifter.com
+// http://www.codelifter.com
+// Free for all users, but leave in this  header
+// NS4-6,IE4-6
+// Fade effect only in IE; degrades gracefully
+
+// =======================================
+// set the following variables
+// =======================================
+
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed1 = 3000
+
+// Duration of crossfade (seconds)
+var crossFadeDuration1 = 3
+
+// Specify the image files
+var Pic1 = new Array() // don't touch this
+// to add more images, just continue
+// the pattern, adding to the array below
+Pic1[0] = '../img/img2/img01.jpg'
+Pic1[1] = '../img/img2/img02.jpg'
+Pic1[2] = '../img/img2/img03.jpg'
+Pic1[3] = '../img/img2/img04.jpg'
+Pic1[4] = '../img/img2/img05.jpg'
+Pic1[5] = '../img/img2/img06.jpg'
+Pic1[6] = '../img/img2/img07.jpg'
+Pic1[7] = '../img/img2/img08.jpg'
+Pic1[8] = '../img/img2/img09.jpg'
+Pic1[9] = '../img/img2/img10.jpg'
+Pic1[10] = '../img/img2/img11.jpg'
+
+
+// =======================================
+// do not edit anything below this line
+// =======================================
+
+var t1
+var j1 = 0
+var p1 = Pic1.length
+var preLoad1 = new Array()
+for (i = 0; i < p1; i++){
+   preLoad1[i] = new Image()
+   preLoad1[i].src = Pic1[i]
+}
+
+function runSlideShow1(){
+
+   if (document.all){
+      document.images.img1.style.filter="blendTrans(duration=2)"
+      document.images.img1.style.filter="blendTrans(duration=crossFadeDuration1)"
+      document.images.img1.filters.blendTrans.Apply()      
+   }
+   document.images.img1.src = preLoad1[j1].src
+   if (document.all){
+      document.images.img1.filters.blendTrans.Play()
+   }
+   j1 = j1 + 1
+   if (j1 > (p1-1)) j1=0
+   t1 = setTimeout('runSlideShow1()', slideShowSpeed1)
+}
+</script>
+
+<link rel="stylesheet" href="../trapeze.css" type="text/css">  
+
+<style type="text/css">
+<!--
+.style4 {color: #99CC99}
+-->
+</style>
+</head>
+<body  text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000" onLoad="runSlideShow1()">
+<a name="top">&nbsp;</a> <div style="position: absolute; top: 50px; width: 230px; left: 35px; text-align: left; border: solid 0px #555555; z-index: 1;"> <a href="trapeze_sp.htm" class="style4">Espagnol</a> &nbsp; <a href="trapeze_dt.htm" class="style4">Deutsch</a> &nbsp; <a href="trapeze_fr.htm" class="style4">Fran&ccedil;ais</a> &nbsp;  <a href="../index.htm" target="_parent" class="style4">start</a> </div> 
+
+ <div style="position: absolute; top: 65px; left: 0px; height: 1px; width: 100%; background-color: #8F8F8F; z-index: 2;"><img src="../pics/leer.gif" width=10 height=1 border=0 alt=""></div>
+
+   <div style="position: absolute; top: 75px; width: 200px; left: 35px; text-align: left; border: solid 0px #555555; z-index: 1;">
+   <a href="trapeze_en.htm" target="_parent" class="grey">Un horizonte cuadrado</a><br>
+   <a href="trapeze_en2.htm" class="grey">Background</a> <br>
+   <a href="trapeze_en1.htm" class="grey">Synopsis</a> <br>
+   <a href="trapeze_en6.htm" class="grey">With</a> <br>
+   <a href="trapeze_en9.htm" target="_self" class="grey">Remarks to the direction</a> <br>
+   <br>
+  
+   <span class="titlebox">Photos 2008</span> <a href="trapeze_en8.htm" target="_parent" class="mehr">...back </a> <br>
+   
+    
+    <br>
+   
+    <a href="trapeze_en4.htm" target="_parent" class="grey">Presse</a> <br>
+	 <a href="../poblas/pob_en.html" class="grey">Projects</a> <br> 
+	   
+     <a href="../tournee/tour_en.html" target="_parent" class="grey">Tourdates </a>
+	 
+</div>
+
+   <div class="content">
+
+    
+<div class="contentTopBox">
+<div class="contentTopPic"><img src="../img/image1.jpg" alt="" name="img1" width="533" height="300" id="img1"></div>
+</div>
+
+<div class="contentBalken">
+<center>
+<div style="text-align: left; margin-left: 40px; margin-top: 5px; border: solid 0px #999999; width: 750px;">
+  <span class="title"><a href="../show/paso_neu.mov" target="_blank" class="title">the angular horizon</a></span>   <br> 
+<span class="blacklink"><strong>Project of a stage-play suspended from the air </strong></span></div>
+<br>
+</center>
+</div>
+
+
+  <div class="contentBottomBox"><br>
+
+  
+      <p class="font"> Photos &copy; Rapha&euml;l P&eacute;aud, Hector Calderon, Ingrid Flores</p>&nbsp;<br>
+
+  
+
+           <div style="clear:all;"><br>&nbsp;<br></p>&nbsp;<br></div>  </div>
+</div>
+</body>
+</html>

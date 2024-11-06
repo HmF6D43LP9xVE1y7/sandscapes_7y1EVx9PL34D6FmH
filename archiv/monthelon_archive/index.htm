@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>monthelon - un lieu de projets artistiques multidisciplinaires et transgressant les genres</title>
+    <meta name="author" content="susann immekeppel,  su tiqqun, su yambor, Su Alois, Su Alois immekeppel, susanna habraschka, su alois habraschka">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.1.js"></script>
+	<script type="text/javascript" src="supersized.1.0.js"></script>
+	<script type="text/javascript">
+	
+	$(function(){
+		$.fn.supersized.options = {  
+			startwidth: 1024,  
+			startheight: 768,
+			minsize: .50,
+			slideshow: 1,
+			slideinterval: 4000  
+		};
+        $('#supersize').supersized(); 
+    });
+
+</script>
+		
+	</script>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			font:60px "Gotham Black", Arial, sans-serif;
+			color:#FFF;
+		}
+		img{
+			border:none;
+		}
+		body {
+			overflow:hidden;/*Needed to eliminate scrollbars*/
+		}
+		#content{
+			margin:0px auto;
+			height:100px;
+			width:100%;
+			bottom:5%;
+			background-color:#262626;
+			border-top:3px solid #4F4F4F;
+			border-bottom:3px solid #4F4F4F;
+			position:absolute;
+		}
+		#contentframe{
+			text-align:center;
+		}
+		
+		/*Supersize Plugin Styles*/
+		#supersize img, #supersize a{
+			height:100%;
+			width:100%;
+			display:none;
+		}
+		#supersize .activeslide, #supersize .activeslide img{
+			display:inline;
+		}
+
+	</style>
+</head>
+
+<body>
+
+<div id="supersize">
+	<a href="actuelle/index.html" target="_self" class="activeslide"><img src="pho/monthelon.jpg" alt="yard and view of ch&acirc;teau de monthelon"/></a>
+	<a href="actuelle/index.html"><img src="pho/background2.jpg"/></a></div>
+
+</body>
+</html>
